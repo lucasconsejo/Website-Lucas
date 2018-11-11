@@ -1,0 +1,26 @@
+body{
+    background-color: #fff;
+}
+#photo-profil img{
+    width: 200px;
+}
+#description h2{
+    color: rgb(134, 134, 134);
+    font-size: 25px;
+}
+#description p{
+    color: rgb(134, 134, 134);
+}
+.center-align {
+    position: absolute;
+    top: 30%;
+    left: 18%;
+    width: 65%;
+}
+
+@media screen and (max-width: 768px) {
+    .center-align {
+        position: relative;
+        margin-top: 30px;
+    }
+  }
