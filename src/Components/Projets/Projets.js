@@ -3,7 +3,9 @@ import React, { Component } from 'react';
 class Projets extends Component{
     render(){
         return(
-            <p>Page projets</p>
+            <div className="container">
+                <p>Page projets</p>
+            </div>
         )
     }
 }
