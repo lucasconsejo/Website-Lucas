@@ -4,7 +4,19 @@ class Projets extends Component{
     render(){
         return(
             <div className="container">
-                <p>Page projets</p>
+                <div className="row">
+                    <div className="col-lg-4 text-center">
+                        <p>En cours...</p>
+                    </div>
+
+                    <div className="col-lg-4 text-center">
+                        <p>En cours...</p>
+                    </div>
+
+                    <div className="col-lg-4 text-center">
+                        <p>En cours...</p>
+                    </div>
+                </div>
             </div>
         )
     }
