@@ -1,0 +1,30 @@
+.pg-height{
+    height: 25px;
+}
+#pg-25{
+    width: 25%;
+}
+#pg-20{
+    width: 30%;
+}
+#pg-95{
+    width: 95%;
+}
+#pg-80{
+    width: 80%;
+}
+#pg-90{
+    width: 90%;
+}
+#pg-60{
+    width: 60%;
+}
+#pg-45{
+    width: 45%;
+}
+#pg-50{
+    width: 50%;
+}
+.progress{
+    background-color: rgb(129, 129, 129);
+}

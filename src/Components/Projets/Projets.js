@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Footer from '../Footer/Footer.js'
 
 class Projets extends Component{
     render(){
@@ -17,6 +18,7 @@ class Projets extends Component{
                         <p>En cours...</p>
                     </div>
                 </div>
+                <Footer />
             </div>
         )
     }
