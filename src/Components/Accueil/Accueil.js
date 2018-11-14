@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import '../../css/Accueil.css'
 import imgProfil from '../../img/profil/photo-lucas.png'
-import Footer from '../Footer/Footer.js'
 
 class Accueil extends Component{
     render(){
@@ -19,8 +18,6 @@ class Accueil extends Component{
                         Je suis passionné par l'informatique. Je suis curieux, motivé et je cherche constamment à approfondir mes compétences.</p>
                     </div>             
                 </div>
-
-                <Footer />
             </div>
         )
     }

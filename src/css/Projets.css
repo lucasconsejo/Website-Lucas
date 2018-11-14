@@ -1,0 +1,35 @@
+.projet{
+    background-color: rgb(236, 236, 236);
+    border: 2px solid rgb(119, 119, 119);
+    border-radius: 8%;
+}
+.projet:hover{
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: 2px solid rgb(119, 119, 119);
+}
+.projet-coming{
+    background-color: rgb(194, 194, 194);
+}
+
+.projet-coming:hover{
+    cursor: default;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: 2px solid rgb(119, 119, 119);
+}
+
+.box{
+    width: 10px!important;
+    box-model: border-box;
+    border: 2px solid transparent;
+    background-clip: padding-box;
+    border-radius: 8%;
+  }
+
+.img-rotation{
+    animation: App-logo-spin infinite 7s linear;
+}
+
+a:-webkit-any-link{
+    text-decoration: none !important;
+}

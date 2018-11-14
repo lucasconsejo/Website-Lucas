@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import '../../css/Competences.css';
 import CV from '../../files/CV.pdf';
-import Footer from '../Footer/Footer.js'
 
 class Competences extends Component{
     render(){
@@ -79,8 +78,6 @@ class Competences extends Component{
                         <a href={CV} alt="telecharger mon cv" className="btn btn-outline-dark" download>Télécharger mon CV</a>
                     </div>
                 </div>
-
-                <Footer/>
             </div>
         )
     }
