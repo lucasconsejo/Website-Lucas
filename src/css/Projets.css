@@ -27,9 +27,12 @@
   }
 
 .img-rotation{
-    animation: App-logo-spin infinite 7s linear;
+    animation: App-logo-spin infinite 5s linear;
 }
 
 a:-webkit-any-link{
     text-decoration: none !important;
+}
+#wetube img{
+    width: 20%;
 }
