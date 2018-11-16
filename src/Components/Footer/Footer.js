@@ -26,7 +26,7 @@ class Footer extends Component{
                     </div> 
                     
                     <div className="offset-md-3 col-md-7 offset-sm-1 col-sm-9 offset-0 offset-xl-3 col-8 col-xl-5 offset-lg-3 col-lg-6">
-                        <p>Copyright © 2018 Lucas Consejo - Tout droits réservés</p>
+                        <p className="text-light">Copyright © 2018 Lucas Consejo - Tout droits réservés</p>
                     </div>
 
                 </div>

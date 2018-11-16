@@ -6,7 +6,7 @@ import '../../css/Navbar.css'
 class Navbar extends Component{
     render(){
         return(
-            <nav className="navbar navbar-expand-lg navbar-light bg-light">
+            <nav className="navbar navbar-expand-lg navbar-dark fixed-top">
                 <div className="container">
                     <Link to="/" className="navbar-brand">
                         <img id="logo-navbar" src={logoNavbar} width="30" height="30" className="d-inline-block align-top" alt="" />
@@ -20,6 +20,11 @@ class Navbar extends Component{
                             <li className="nav-item active">
                                 <Link to="/" className="nav-link">
                                     Accueil
+                                </Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link to="/formation" className="nav-link">
+                                    Formation
                                 </Link>
                             </li>
                             <li className="nav-item">

@@ -4,6 +4,7 @@ import '../css/App.css';
 import Navbar from '../Components/Navbar/Navbar.js'
 import Footer from '../Components/Footer/Footer.js'
 import Accueil from '../Components/Accueil/Accueil.js'
+import Formation from '../Components/Formation/Formation.js'
 import Competence from '../Components/Competences/Competences.js'
 import Projets from '../Components/Projets/Projets.js'
 import ProjetWT from '../Components/Projets/ProjetWT.js'
@@ -18,6 +19,7 @@ class App extends Component {
           <Switch>
             <Route exact path="/" component={Accueil} />
             <Route path="/competences" component={Competence} />
+            <Route path="/formation" component={Formation} />
             <Route path="/projets/wetube" component={ProjetWT} />
             <Route path="/projets" component={Projets} />
             <Route path="/contact" component={Contact} />
