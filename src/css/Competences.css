@@ -29,5 +29,21 @@
     width: 50%;
 }
 .progress{
-    background-color: rgb(129, 129, 129);
+    background-color: rgba(221, 221, 221, 0.801);
+}
+
+#competence{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #0a4b60;
+    background: url(../img/competence/fond-competence.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#fond-competence{
+    width: 100%;
+    height: 100%;
+    background: rgba(74, 126, 126, 0.76);
 }

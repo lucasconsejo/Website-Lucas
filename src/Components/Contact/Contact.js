@@ -20,7 +20,27 @@ class Contact extends Component{
 
                     <div className="row">
                         <div className="col-lg-6">
-                            <p className="text-light">Vous pouvez me contacter via le formulaire ci-contre si vous avez une question à propos de mon travail, un projet que vous aimeriez réaliser ou autres n'hésitez pas. Je vous répondrai le plus vite possible.</p>
+                            <div className="row">
+                                <div className="col-lg-12">
+                                    <h4 className="text-light mt-3">Vous voulez me contacter ?<br/>Remplissez le formulaire de contact :)</h4>
+                                </div>
+
+                                <div className="col-lg-12 mt-3">
+                                    <p className="text-light">Email :&nbsp;
+                                        <a className="text-light" href="mailto:lucas.consejo@ynov.com">
+                                            lucas.consejo@ynov.com
+                                        </a>
+                                    </p>
+                                </div>
+
+                                <div className="col-lg-12">
+                                    <p className="text-light">Tel :&nbsp;
+                                        <a className="text-light" href="tel:lucas.consejo@ynov.com">
+                                            06 05 23 18 54
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
                         </div>
 
                         <div className="col-lg-6">

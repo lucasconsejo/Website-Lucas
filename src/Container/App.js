@@ -11,6 +11,20 @@ import ProjetWT from '../Components/Projets/ProjetWT.js'
 import Contact from '../Components/Contact/Contact.js'
 
 class App extends Component {
+
+  authenticate(){
+    return new Promise(resolve => setTimeout(resolve, 1000))
+  }
+        
+  componentDidMount(){
+    this.authenticate().then(() => {
+      const ele = document.getElementById('ipl-progress-indicator')
+      if(ele){
+        ele.classList.add('available')
+      }
+    })
+  }
+
   render() {
     return (
       <Router>
