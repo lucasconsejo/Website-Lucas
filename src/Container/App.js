@@ -7,7 +7,7 @@ import Accueil from '../Components/Accueil/Accueil.js'
 import Formation from '../Components/Formation/Formation.js'
 import Competence from '../Components/Competences/Competences.js'
 import Projets from '../Components/Projets/Projets.js'
-import ProjetWT from '../Components/Projets/ProjetWT.js'
+//import ProjetWT from '../Components/Projets/ProjetWT.js'
 import Contact from '../Components/Contact/Contact.js'
 
 class App extends Component {
@@ -34,7 +34,6 @@ class App extends Component {
             <Route exact path="/" component={Accueil} />
             <Route path="/competences" component={Competence} />
             <Route path="/formation" component={Formation} />
-            <Route path="/projets/wetube" component={ProjetWT} />
             <Route path="/projets" component={Projets} />
             <Route path="/contact" component={Contact} />
             <Redirect exact from="*" to="/" />
@@ -43,6 +42,7 @@ class App extends Component {
         </div>
       </Router>
     );
+    //<Route path="/projets/wetube" component={ProjetWT} />
   }
 }
 

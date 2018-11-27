@@ -47,13 +47,13 @@
   z-index: 9999;
   }
   .ipl-progress-indicator-head {
-  background-color: #ffffff;
-  height: 8px;
+  background-color: #adadad;
+  height: 6px;
   overflow: hidden;
   position: relative;
   }
   .ipl-progress-indicator .first-indicator, .ipl-progress-indicator .second-indicator {
-  background-color: rgb(148, 129, 231);
+  background-color: white;
   bottom: 0;
   left: 0;
   right: 0;

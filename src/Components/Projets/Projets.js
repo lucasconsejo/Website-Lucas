@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom'
 import LogoWetube from '../../img/projets-img/react-logo.png'
-import ImgTravaux from '../../img/projets-img/project.png'
 import '../../css/Projets.css'
                     
 class Projets extends Component{
@@ -13,29 +11,27 @@ class Projets extends Component{
                     <div className="container">
                         <h2 className="mt-3 text-light">Projets récents</h2>
                         <div className="row mt-3 mx-auto mt-4">
-                            <Link to="/projets/wetube" id="img-wetube" className="col-lg-4  col-12  text-center  text-dark  box">
+                            <a href="https://github.com/lucasconsejo/Projects-React-js/tree/master/Movies%20Trailer" id="img-wetube" className="col-lg-4  col-12  text-center  text-dark  box" target="_blank" rel="noopener noreferrer">
                                 <div className="projet p-3">
                                     <h3>WeTube</h3>
                                     <img src={LogoWetube} className="img-rotation" alt="appli WeTube"/>
                                     <p>WeTube est une application web qui permet de rechercher des bande d'annonce de films. L'appli utilise une API afin de recupérer les données des films.</p>
                                     <p>React js & Bootstrap</p>
-                                    <Link to="/projets/wetube" id="btn-wetube" className="btn btn-dark">  
-                                        Voir plus les détails
-                                    </Link>
+                                    <button className="btn btn-dark">  
+                                        Git du projet
+                                    </button >
                                 </div>
-                            </Link>
+                            </a>
 
                             <div id="projet-coming" className="col-lg-4  col-12  text-center  box">
                                 <div className="projet p-3 projet-coming">
-                                    <h3>Indisponible</h3>
-                                    <img src={ImgTravaux} className="img-rotation" alt="appli WeTube"/>
+                                    <p className="font-weight-bold">Indisponible</p>
                                 </div>
                             </div>
 
                             <div id="projet-coming" className="col-lg-4  col-12  text-center  box">
                                 <div className="projet p-3 projet-coming">
-                                    <h3>Indisponible</h3>
-                                    <img src={ImgTravaux} className="img-rotation" alt="appli WeTube"/>
+                                    <p className="font-weight-bold">Indisponible</p>
                                 </div>
                             </div>
                         </div>
