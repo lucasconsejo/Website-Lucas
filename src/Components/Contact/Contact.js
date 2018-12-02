@@ -1,41 +1,32 @@
 import React, { Component } from 'react';
 import '../../css/Contact.css'
-class Contact extends Component{
-    constructor(props){
-        super(props)
-        this.state ={
-            name : '',
-            email: '',
-            msg: ''
-        }
-    }
+import Navbar from '../../Components/Navbar/Navbar.js'
 
+class Contact extends Component{
     render(){
         return(
             <div id="contact">
+                <Navbar color="color5" />
                 <div id="fond-contact">
-                <div className="container">
+                <div id="box-size" className="container">
                     <div className="navHidden"></div>
                     <h2 className="text-light mt-3">Contact</h2>
 
-                    <div className="row">
-                        <div className="col-lg-6">
+                    <div className="row pt-4 pb-4" id="fond-color-contact">
+                        <div className="col-lg-6 align-self-center">
                             <div className="row">
                                 <div className="col-lg-12">
-                                    <h4 className="text-light mt-3">Vous voulez me contacter ?<br/>Remplissez le formulaire de contact :)</h4>
+                                    <h4 className="text-light">Vous voulez me contacter ?<br/>Vous pouvez remplir le formulaire de contact :)</h4>
                                 </div>
 
-                                <div className="col-lg-12 mt-3">
-                                    <p className="text-light">Email :&nbsp;
+                                <div className="col-lg-12 mt-5">
+                                    <p id="email" className="text-light">
+                                        Email :&nbsp;
                                         <a className="text-light" href="mailto:lucas.consejo@ynov.com">
                                             lucas.consejo@ynov.com
-                                        </a>
-                                    </p>
-                                </div>
-
-                                <div className="col-lg-12">
-                                    <p className="text-light">Tel :&nbsp;
-                                        <a className="text-light" href="tel:lucas.consejo@ynov.com">
+                                        </a><br />
+                                        Tel :&nbsp;
+                                         <a className="text-light" href="tel:lucas.consejo@ynov.com">
                                             06 05 23 18 54
                                         </a>
                                     </p>

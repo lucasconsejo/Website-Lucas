@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Switch, Route, Redirect} from "react-router-dom"
 import '../css/App.css';
-import Navbar from '../Components/Navbar/Navbar.js'
 import Footer from '../Components/Footer/Footer.js'
 import Accueil from '../Components/Accueil/Accueil.js'
 import Formation from '../Components/Formation/Formation.js'
@@ -29,7 +28,6 @@ class App extends Component {
     return (
       <Router>
         <div>
-          <Navbar />
           <Switch>
             <Route exact path="/" component={Accueil} />
             <Route path="/competences" component={Competence} />

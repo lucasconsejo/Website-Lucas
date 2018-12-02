@@ -2,15 +2,17 @@ import React, { Component } from 'react';
 import '../../css/Formation.css';
 import imgYnov from '../../img/formation/logo-ynov-blanc.png'
 import imgBac from '../../img/formation/logo-diplome.png'
+import Navbar from '../../Components/Navbar/Navbar.js'
 
 class Formation extends Component{
     render(){
         return(
             <div id="formation">
+                <Navbar color="color2" />
                 <div id="fond-formation">
                     <div className="navHidden"></div>
 
-                    <div className="container">
+                    <div id="box-size" className="container">
                         <h2 className="text-light mt-3">Formation</h2>
 
                         <div className="row mt-5">

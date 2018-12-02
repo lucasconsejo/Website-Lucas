@@ -1,15 +1,17 @@
 import React, { Component } from 'react';
 import '../../css/Competences.css';
 import CV from '../../files/CV.pdf';
+import Navbar from '../../Components/Navbar/Navbar.js'
 
 class Competences extends Component{
     render(){
         return(
             <div id="competence">
+                <Navbar color="color3" />
                 <div id="fond-competence">
                     <div className="navHidden"></div>
 
-                    <div className="container">
+                    <div id="box-size" className="container">
                         <h2 className="mt-3 text-light">Compétences</h2>
 
                         <div className="row mt-4">

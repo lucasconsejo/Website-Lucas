@@ -2,7 +2,7 @@ body{
     background-color: rgb(207, 207, 207);
     overflow: hidden;
 }
-#accueil {
+#fond-accueil{
     position: absolute;
     width: 100%;
     height: 100%;
@@ -37,3 +37,45 @@ video{
         margin-top: 30px;
     }
   }
+
+  @media screen and (max-width: 992px) {
+    body{
+        overflow: auto;
+    }
+    #formation, #competence, #projets, #contact{
+        position: relative!important;
+    }
+    video{
+        visibility: hidden;
+    }
+    #accueil{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background: url(../img/accueil/accueil.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    #box-size{
+        padding-bottom: 100px;
+    }
+    .navbar{
+        box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 8px 23px 0 rgba(0, 0, 0, 0.19);
+    }
+    #color1{
+        background-color: #565771;
+    }
+    #color2{
+        background-color: #4b6182;
+    }
+    #color3{
+        background-color: #7d9999;
+    }
+    #color4{
+        background-color: #434e63;
+    }
+    #color5{
+        background-color: #3a3848;
+    }
+  }
+

@@ -6,7 +6,7 @@ import '../../css/Navbar.css'
 class Navbar extends Component{
     render(){
         return(
-            <nav className="navbar navbar-expand-lg navbar-dark fixed-top">
+            <nav id={this.props.color} className="navbar navbar-expand-lg navbar-dark fixed-top">
                 <div className="container">
                     <Link to="/" className="navbar-brand">
                         <img id="logo-navbar" src={logoNavbar} width="30" height="30" className="d-inline-block align-top" alt="" />
