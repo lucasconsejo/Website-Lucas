@@ -50,7 +50,7 @@ video{
     }
     #accueil{
         width: 100%;
-        height: 100%;
+        height: 115%;
         position: absolute;
         background: url(../img/accueil/accueil.png);
         background-repeat: no-repeat;
@@ -76,6 +76,50 @@ video{
     }
     #color5{
         background-color: #3a3848;
+    }
+
+    #photo-profil{
+        text-align: center;
+        margin-left: 0px;
+        padding: 0;
+        left: 5%;
+    }
+
+    #photo-profil img{
+        width: 120px;
+    }
+    #description h1{
+        font-size: 25px;
+        text-align: center;
+    }
+    #description h2{
+        font-size: 20px;
+        text-align: center;
+    }
+    #formation h2, #competence h2, #projets h2{
+        font-size: 20px;
+    }
+
+    #formation h3{
+        font-size: 17px;
+    }
+    #row1, #row2{
+        margin-top: 20px!important;
+    }
+    #img-ynov{
+        width: 120px!important;
+    }
+    #img-bac{
+        width: 100px!important;
+        text-align: center;
+    }
+    .center-align{
+        margin-right: 0px;
+        width: 100%;
+        left: 5%;
+    }
+    .fixed-bottom{
+        visibility: hidden;
     }
   }
 

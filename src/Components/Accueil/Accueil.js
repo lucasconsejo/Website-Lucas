@@ -18,7 +18,7 @@ class Accueil extends Component{
                         <div className="navHidden"></div>
                         <div className="container-fluide">
                             <div id="box-size" className="row center-align">
-                                <div id="photo-profil" className="col-md-1 col-sm-2 col-2 col-lg-2 col-xl-2    offset-md-0 offset-sm-4  offset-lg-1 offset-2">
+                                <div id="photo-profil" className="col-md-12 col-sm-10 col-11 col-lg-2 col-xl-2 offset-md-0 offset-sm-4  offset-lg-1 offset-2">
                                     <img src={imgProfil} alt="profil Lucas Consejo"/> 
                                 </div>
 
@@ -36,5 +36,4 @@ class Accueil extends Component{
         )
     }
 }
-
 export default Accueil
