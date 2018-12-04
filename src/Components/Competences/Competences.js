@@ -18,14 +18,14 @@ class Competences extends Component{
                             <div className="col-lg-6">
                                 <p className="text-light">HTML/CSS</p>
                                 <div className="progress pg-height">
-                                    <div id="pg-95" className="progress-bar bg-dark text-right font-weight-bold pr-3" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">95%</div>
+                                    <div id="pg-85" className="progress-bar bg-dark text-right font-weight-bold pr-3" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">85%</div>
                                 </div>
                             </div>
 
                             <div className="col-lg-6">
                                 <p className="text-light">Bootstrap / Materialize</p>
                                 <div className="progress pg-height">
-                                    <div id="pg-80" className="progress-bar bg-dark text-right font-weight-bold pr-3" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+                                    <div id="pg-60" className="progress-bar bg-dark text-right font-weight-bold pr-3" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
                                 </div>
                             </div>
 
@@ -35,14 +35,14 @@ class Competences extends Component{
                             <div className="col-lg-6">
                                 <p className="text-light">Javascript (ES6 & JQuery)</p>
                                 <div className="progress pg-height">
-                                    <div id="pg-60" className="progress-bar bg-dark text-right font-weight-bold pr-3" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
+                                    <div id="pg-55" className="progress-bar bg-dark text-right font-weight-bold pr-3" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">55%</div>
                                 </div>
                             </div>
                             
                             <div className="col-lg-6">
                                 <p className="text-light">PHP</p>
                                 <div className="progress pg-height">
-                                    <div id="pg-20" className="progress-bar bg-dark text-right font-weight-bold pr-3" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">30%</div>
+                                    <div id="pg-35" className="progress-bar bg-dark text-right font-weight-bold pr-3" role="progressbar" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100">35%</div>
                                 </div>
                             </div>
                         </div>
@@ -51,7 +51,7 @@ class Competences extends Component{
                             <div className="col-lg-6">
                                 <p className="text-light">Symfony 4</p>
                                 <div className="progress pg-height">
-                                    <div id="pg-25" className="progress-bar bg-dark text-right font-weight-bold pr-3" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                                    <div id="pg-20" className="progress-bar bg-dark text-right font-weight-bold pr-3" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">20%</div>
                                 </div>
                             </div>
 
@@ -65,16 +65,32 @@ class Competences extends Component{
 
                         <div className="row mt-3">
                             <div className="col-lg-6">
+                                <p className="text-light">Java (Eclipse & Android Studio)</p>
+                                <div className="progress pg-height">
+                                    <div id="pg-65" className="progress-bar bg-dark text-right font-weight-bold pr-3" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">65%</div>
+                                </div>
+                            </div>
+
+                            <div className="col-lg-6">
+                                <p className="text-light">C# .NET</p>
+                                <div className="progress pg-height">
+                                    <div id="pg-40" className="progress-bar bg-dark text-right font-weight-bold pr-3" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">40%</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="row mt-3">
+                            <div className="col-lg-6">
                                 <p className="text-light">SQL</p>
                                 <div className="progress pg-height">
-                                    <div id="pg-50" className="progress-bar bg-dark text-right font-weight-bold pr-3" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+                                    <div id="pg-60" className="progress-bar bg-dark text-right font-weight-bold pr-3" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
                                 </div>
                             </div>
 
                             <div className="col-lg-6">
                                 <p className="text-light">Utilisation de git</p>
                                 <div className="progress pg-height">
-                                    <div id="pg-90" className="progress-bar bg-dark text-right font-weight-bold pr-3" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
+                                    <div id="pg-75" className="progress-bar bg-dark text-right font-weight-bold pr-3" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
                                 </div>
                             </div>
                         </div>

@@ -8,13 +8,16 @@
     width: 25%;
 }
 #pg-20{
-    width: 30%;
+    width: 20%;
+}
+#pg-35{
+    width: 34%;
 }
 #pg-95{
     width: 95%;
 }
-#pg-80{
-    width: 80%;
+#pg-85{
+    width: 85%;
 }
 #pg-90{
     width: 90%;
@@ -22,11 +25,23 @@
 #pg-60{
     width: 60%;
 }
+#pg-40{
+    width: 40%;
+}
 #pg-45{
     width: 45%;
 }
 #pg-50{
     width: 50%;
+}
+#pg-55{
+    width: 55%;
+}
+#pg-65{
+    width: 65%;
+}
+#pg-75{
+    width: 75%;
 }
 .progress{
     background-color: rgba(221, 221, 221, 0.801);
