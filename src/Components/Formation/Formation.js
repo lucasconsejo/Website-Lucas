@@ -16,7 +16,7 @@ class Formation extends Component{
                         <h2 className="text-light mt-3">Formation</h2>
 
                         <div id="row1" className="row mt-5">
-                            <div className="col-lg-2 offset-lg-1 col-md-2 offset-md-0 col-sm-2 offset-sm-4 col-2 offset-3">
+                            <div className="col-lg-2 offset-lg-1 col-md-2 offset-md-0 col-sm-2 offset-sm-4 col-12 text-center">
                                 <img id="img-ynov" src={imgYnov} alt="" />
                             </div>
 
@@ -29,7 +29,7 @@ class Formation extends Component{
                         </div>
 
                         <div id="row2" className="row mt-5">
-                            <div className="col-lg-2 offset-lg-1 col-md-2 offset-md-0 col-sm-2 offset-sm-4 col-2 offset-3">
+                            <div className="col-lg-2 offset-lg-1 col-md-2 offset-md-0 col-sm-2 offset-sm-4 col-12 text-center">
                                 <img id="img-bac" src={imgBac} alt="" />
                             </div>
 
