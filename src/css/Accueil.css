@@ -31,6 +31,13 @@ video{
     left: 18%;
     width: 65%;
 }
+.navbar-toggler{
+    border: none;
+}
+.navbar-toggler:focus{
+    outline: 0px dotted;
+    outline: 0px auto -webkit-focusring-color;
+}
 @media screen and (max-width: 768px) {
     .center-align {
         position: relative;
