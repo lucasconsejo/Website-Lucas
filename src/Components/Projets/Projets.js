@@ -12,7 +12,7 @@ class Projets extends Component{
                     <div className="navHidden"></div>
                     <div id="box-size" className="container">
                         <h2 className="mt-3 text-light">Projets récents</h2>
-                        <div className="row mt-3 mx-auto mt-4">
+                        <div id="list-project" className="row mt-3 mx-auto mt-4">
                             <a href="https://github.com/lucasconsejo/Projects-React-js/tree/master/Movies%20Trailer" id="img-wetube" className="col-lg-4  col-12  text-center  text-dark  box" target="_blank" rel="noopener noreferrer">
                                 <div className="projet p-3">
                                     <h3>WeTube</h3>

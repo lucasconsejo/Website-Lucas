@@ -110,6 +110,12 @@ video{
     #formation h3{
         font-size: 17px;
     }
+    #list-project a{
+        padding: 0;
+    }
+    #projet-coming{
+        padding: 0;
+    }
     #contact h4{
         font-size: 17px;
     }
