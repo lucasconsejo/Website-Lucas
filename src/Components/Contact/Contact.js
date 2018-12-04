@@ -17,24 +17,17 @@ class Contact extends Component{
                             <div className="row">
                                 <div className="col-lg-12">
                                     <h4 className="text-light">Vous voulez me contacter ?<br/>Vous pouvez remplir le formulaire de contact :)</h4>
-                                </div>
-
-                                <div className="col-lg-12 mt-5">
                                     <p id="email" className="text-light">
                                         Email :&nbsp;
                                         <a className="text-light" href="mailto:lucas.consejo@ynov.com">
                                             lucas.consejo@ynov.com
                                         </a><br />
-                                        Tel :&nbsp;
-                                         <a className="text-light" href="tel:lucas.consejo@ynov.com">
-                                            06 05 23 18 54
-                                        </a>
                                     </p>
                                 </div>
                             </div>
                         </div>
 
-                        <div className="col-lg-6">
+                        <div id="send-message" className="col-lg-6">
                             <div className="row">
                                 <div className="col-lg-12">
                                     <p className="font-weight-bold text-light">Nom</p>

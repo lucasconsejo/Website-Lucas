@@ -10,7 +10,7 @@
 #fond-contact{
     width: 100%;
     height: 100%;
-    background: rgba(53, 49, 67, 0.87);
+    background: rgba(53, 49, 67, 0.932);
 }
 .input-group input:focus, .input-group input, .input-group textarea:focus, .input-group textarea{
     background-color: rgb(53, 49, 67);
@@ -19,6 +19,6 @@
 #email{
     font-size: 20px;
 }
-#fond-color-contact{
-    background-color: rgb(53, 49, 67);
+#send-message button{
+    width: 100%;
 }

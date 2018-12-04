@@ -96,12 +96,19 @@ video{
         font-size: 20px;
         text-align: center;
     }
-    #formation h2, #competence h2, #projets h2{
+    #formation h2, #competence h2, #projets h2, #contact h2{
         font-size: 20px;
     }
 
     #formation h3{
         font-size: 17px;
+    }
+    #contact h4{
+        font-size: 17px;
+    }
+    #email{
+        font-size: 16px!important;
+        margin-bottom: 25px!important;
     }
     #row1, #row2{
         margin-top: 20px!important;
