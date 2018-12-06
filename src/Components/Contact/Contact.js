@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import '../../css/Contact.css'
 import Navbar from '../../Components/Navbar/Navbar.js'
-import firebase from firebase
+import firebase from 'firebase'
 import Db from '../../Firebase/config.js'
 
 class Contact extends Component{
