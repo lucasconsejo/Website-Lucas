@@ -5,6 +5,7 @@ import firebase from 'firebase/app'
 import 'firebase/app'
 import 'firebase/firestore'
 import 'firebase/database'
+import SweetAlert from 'sweetalert2-react'
 import Db from '../../Firebase/config.js'
 
 class Contact extends Component{
@@ -13,7 +14,8 @@ class Contact extends Component{
         this.state = {
             name :"",
             email: "",
-            message: ""
+            message: "",
+            show : false
         }
         try {
             firebase.initializeApp(Db)
@@ -33,7 +35,7 @@ class Contact extends Component{
                 email:this.state.email,
                 message: this.state.message
             }).then(()=>{
-                console.log("--> NEW MESSAGE")
+                this.setState({ show: true })
             }).catch((error)=>{
                 console.log("Err ",error )
             })
@@ -43,10 +45,8 @@ class Contact extends Component{
                 message: ""                
             })
         }
-        else{
-            console.log('oupps...')
-        }
     }
+
 
     getName(event){
         this.setState({
@@ -70,6 +70,13 @@ class Contact extends Component{
         return(
             <div id="contact">
                 <Navbar color="color5" />
+                <SweetAlert
+                    show={this.state.show}
+                    type="success"
+                    title="Envoyé !"
+                    text="Le message a bien été envoyé."
+                    onConfirm={() => this.setState({ show: false })}
+                />
                 <div id="fond-contact">
                 <div id="box-size" className="container">
                     <div className="navHidden"></div>
