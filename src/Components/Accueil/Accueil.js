@@ -18,11 +18,11 @@ class Accueil extends Component{
                         <div className="navHidden"></div>
                         <div className="container-fluide">
                             <div id="box-size" className="row center-align">
-                                <div id="photo-profil" className="col-11  col-sm-10  col-md-3  col-lg-2  col-xl-2  offset-2  offset-sm-4  offset-md-0  offset-lg-1 ">
+                                <div id="photo-profil" className="col-12  col-sm-12  col-md-3  col-lg-2  col-xl-2  offset-md-0  offset-lg-1 ">
                                     <img src={imgProfil} alt="profil Lucas Consejo"/> 
                                 </div>
 
-                                <div id="description" className="col-12  col-sm-11  col-md-8  col-lg-7  col-xl-6  offset-md-1  offset-lg-2">
+                                <div id="description" className="col-12  col-sm-12  col-md-8  col-lg-7  col-xl-6  offset-md-1  offset-lg-2">
                                     <h1>Lucas Consejo</h1>
                                     <h2>Développeur Web & Android</h2><br/>
                                     <p className="text-light">Je suis étudiant en 2ème année en Informatique à Ingésup, sur le campus Ynov à Bordeaux.
