@@ -3,7 +3,7 @@
 ## Installation du projet
 
 Une fois le projet cloné :
-* Assurez vous d'avoir un environnement Node JS d'installer (Si ce n'est pas le cas, [Télécharger Node JS](https://nodejs.org/en/))
+* Assurez vous d'avoir un environnement Node JS d'installé (Si ce n'est pas le cas, [Télécharger Node JS](https://nodejs.org/en/))
 * Dans le dossier du projet : éxécuter **npm install -g** pour récupérer les node_modules
 
 ### npm start
