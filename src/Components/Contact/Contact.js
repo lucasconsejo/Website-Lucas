@@ -1,23 +1,33 @@
 import React, { Component } from 'react';
 import '../../css/Contact.css'
 import Navbar from '../../Components/Navbar/Navbar.js'
-import firebase from 'firebase'
+import firebase from 'firebase/app'
+import 'firebase/app'
+import 'firebase/firestore'
+import 'firebase/database'
 import Db from '../../Firebase/config.js'
 
 class Contact extends Component{
     constructor(props){
         super(props)
-        firebase.initializeApp(Db)
         this.state = {
             name :"",
             email: "",
             message: ""
         }
+        try {
+            firebase.initializeApp(Db)
+            }
+        catch (err) {
+            if (!/already exists/.test(err.message)) {
+                console.error('Firebase initialization error', err.stack)
+            }
+        }
     }
 
     sendMessage(){
         if(this.state.name.length > 0 && this.state.email.length > 0 && this.state.message.length > 0){
-            const ref = firebase.database().ref('msgbox/'+this.state.name)
+            var ref = firebase.database().ref('msgbox/'+this.state.name)
             ref.set({
                 name: this.state.name,
                 email:this.state.email,
