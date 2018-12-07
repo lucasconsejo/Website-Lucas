@@ -15,6 +15,6 @@ const httpsOptions = {
   key:fs.readFileSync(path.join(__dirname, 'ssl', 'server.key'))
 }
 
-https.createServer(httpsOptions, app).listen(8080, () =>{
-  console.log('Le serveur vient de se lancer et écoute sur le port 8080')
+https.createServer(httpsOptions, app).listen(80, () =>{
+  console.log('Le serveur vient de se lancer et écoute sur le port 80')
 })
