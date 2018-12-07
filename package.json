@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "email-regex": "^3.0.0",
     "express": "^4.16.4",
     "firebase": "^5.6.0",
     "react": "^16.6.1",

@@ -10,7 +10,7 @@ class Projets extends Component{
                 <Navbar color="color4" />
                 <div id="fond-projets">
                     <div className="navHidden"></div>
-                    <div id="box-size" className="container">
+                    <div id="box-size2" className="container">
                         <h2 className="mt-3 text-light">Projets récents</h2>
                         <div id="list-project" className="row mt-3 mx-auto mt-4">
                         <a href="https://github.com/lucasconsejo/Website-Lucas" id="img-wetube" className="col-lg-4  col-12  text-center  text-dark  box" target="_blank" rel="noopener noreferrer">

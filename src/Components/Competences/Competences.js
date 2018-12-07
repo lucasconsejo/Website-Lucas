@@ -11,7 +11,7 @@ class Competences extends Component{
                 <div id="fond-competence">
                     <div className="navHidden"></div>
 
-                    <div id="box-size" className="container">
+                    <div id="box-size2" className="container">
                         <h2 className="mt-3 text-light">Compétences</h2>
 
                         <div className="row mt-4">

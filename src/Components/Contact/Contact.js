@@ -7,6 +7,7 @@ import 'firebase/firestore'
 import 'firebase/database'
 import SweetAlert from 'sweetalert2-react'
 import Db from '../../Firebase/config.js'
+import regex from 'email-regex'
 
 class Contact extends Component{
     constructor(props){
@@ -15,7 +16,10 @@ class Contact extends Component{
             name :"",
             email: "",
             message: "",
-            show : false
+            show : false,
+            show2 : false,
+            show3 : false,
+            show4 : false
         }
         try {
             firebase.initializeApp(Db)
@@ -30,20 +34,28 @@ class Contact extends Component{
     sendMessage(){
         if(this.state.name.length > 0 && this.state.email.length > 0 && this.state.message.length > 0){
             var ref = firebase.database().ref('msgbox/'+this.state.name)
-            ref.set({
-                name: this.state.name,
-                email:this.state.email,
-                message: this.state.message
-            }).then(()=>{
-                this.setState({ show: true })
-            }).catch((error)=>{
-                console.log("Err ",error )
-            })
-            this.setState({
-                name: "",
-                email: "",
-                message: ""                
-            })
+            if(regex().test(this.state.email)){
+                ref.set({
+                    name: this.state.name,
+                    email:this.state.email,
+                    message: this.state.message
+                }).then(()=>{
+                    this.setState({ show: true })
+                }).catch((error)=>{
+                    this.setState({ show2: true })
+                })
+                this.setState({
+                    name: "",
+                    email: "",
+                    message: ""                
+                })
+            }
+            else{
+                this.setState({ show3: true })
+            }
+        }
+        else{
+            this.setState({ show4: true })
         }
     }
 
@@ -75,10 +87,35 @@ class Contact extends Component{
                     type="success"
                     title="Envoyé !"
                     text="Le message a bien été envoyé."
+                    confirmButtonColor= "#3a3848"
                     onConfirm={() => this.setState({ show: false })}
                 />
+                <SweetAlert
+                    show={this.state.show2}
+                    type="error"
+                    title="Envoi impossible"
+                    text="Une erreur s'est produite lors de l'envoi du message. Réessayez plus tard."
+                    confirmButtonColor= "#3a3848"
+                    onConfirm={() => this.setState({ show2: false })}
+                />
+                <SweetAlert
+                    show={this.state.show3}
+                    type= "warning"
+                    title="Email invalide"
+                    text="Veuillez saisir un email valide"
+                    confirmButtonColor= "#3a3848"
+                    onConfirm={() => this.setState({ show3: false })}
+                />
+                <SweetAlert
+                    show={this.state.show4}
+                    type="error"
+                    title="Champs manquants"
+                    text="Veuillez remplir tous les champs avant d'envoyer."
+                    confirmButtonColor= "#3a3848"
+                    onConfirm={() => this.setState({ show4: false })}
+                />
                 <div id="fond-contact">
-                <div id="box-size" className="container">
+                <div id="box-size2" className="container">
                     <div className="navHidden"></div>
                     <h2 className="text-light mt-3">Contact</h2>
 

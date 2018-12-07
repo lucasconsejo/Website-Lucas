@@ -57,6 +57,9 @@ video{
         margin: 0!important;
         padding-bottom: 100px;
     }
+    #box-size2{
+        padding-bottom: 100px;
+    }
     .navbar{
         box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 8px 23px 0 rgba(0, 0, 0, 0.19);
     }
