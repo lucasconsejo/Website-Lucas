@@ -36,12 +36,6 @@ class Projets extends Component{
                                     </button >
                                 </div>
                             </a>
-
-                            <div id="projet-coming" className="col-lg-4  col-12  text-center  box">
-                                <div className="projet p-3 projet-coming">
-                                    <p className="font-weight-bold">Indisponible</p>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
