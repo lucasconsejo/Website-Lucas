@@ -15,6 +15,7 @@ class Contact extends Component{
         this.state = {
             name :"",
             email: "",
+            sujet: "",
             message: "",
             show : false,
             show2 : false,
@@ -32,12 +33,13 @@ class Contact extends Component{
     }
 
     sendMessage(){
-        if(this.state.name.length > 0 && this.state.email.length > 0 && this.state.message.length > 0){
+        if(this.state.name.length > 0 && this.state.email.length > 0 && this.state.sujet.length > 0 && this.state.message.length > 0){
             var ref = firebase.database().ref('msgbox/'+this.state.name)
             if(regex().test(this.state.email)){
                 ref.set({
                     name: this.state.name,
                     email:this.state.email,
+                    sujet:this.state.sujet,
                     message: this.state.message
                 }).then(()=>{
                     this.setState({ show: true })
@@ -47,6 +49,7 @@ class Contact extends Component{
                 this.setState({
                     name: "",
                     email: "",
+                    sujet: "",
                     message: ""                
                 })
             }
@@ -69,6 +72,12 @@ class Contact extends Component{
     getEmail(event){
         this.setState({
             email:event.target.value
+        })
+    }
+
+    getSujet(event){
+        this.setState({
+            sujet:event.target.value
         })
     }
 
@@ -142,11 +151,18 @@ class Contact extends Component{
                                         <input type="text" value={this.state.name} onChange={this.getName.bind(this)} className="form-control" aria-label="Message" aria-describedby="inputGroup-sizing-default" />
                                     </div>
                                 </div>
-
+                                
                                 <div className="col-lg-12">
                                     <p className="font-weight-bold text-light">Adresse mail</p>
-                                    <div className="input-group">
+                                    <div className="input-group mb-3">
                                         <input type="email" value={this.state.email} onChange={this.getEmail.bind(this)} className="form-control" aria-describedby="email"/>
+                                    </div>
+                                </div>
+
+                                <div className="col-lg-12">
+                                    <p className="font-weight-bold text-light">Sujet</p>
+                                    <div className="input-group mb-3">
+                                        <input type="text" value={this.state.sujet} onChange={this.getSujet.bind(this)} className="form-control" aria-label="Message" aria-describedby="inputGroup-sizing-default" />
                                     </div>
                                 </div>
 
