@@ -18,7 +18,7 @@ class Projets extends Component{
                                 <div className="projet p-3">
                                     <h5>Lucas Consejo - Développeur Web & Android</h5>
                                     <img src={LogoWetube} className="img-rotation" alt="appli WeTube"/>
-                                    <p>J'ai développé mon site web avec React JS. J'ai utilisé Express pour le serveur web, que j'ai ensuite hébergé chez OVH sous Debian.</p>
+                                    <p>J'ai développé mon site web avec React JS. J'ai utilisé Express (Framework Node JS) pour le serveur web, ainsi que Firebase (Realtime Database) pour le formulaire de contact. J'ai ensuite configuré mon Raspebrry pi 3 afin d'héberger mon site. </p>
                                     <p>React js & Bootstrap</p>
                                     <button className="btn btn-dark">  
                                         Git du projet
