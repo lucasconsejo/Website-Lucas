@@ -18,10 +18,6 @@ app.get('/*', function (req, res) {
   res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
 
-app.get('/sitemap.xml', (req, res) => (
-  res.status(200).sendFile('sitemap.xml')
-));
-
 httpApp.get("*", function (req, res, next) {
     res.redirect("https://" + req.headers.host + "/" + req.path);
 });
