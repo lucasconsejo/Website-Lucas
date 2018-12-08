@@ -1,5 +1,6 @@
 const express = require('express');
 const https = require('https')
+const http = require('http')
 const fs = require('fs')
 const path = require('path');
 const app = express();
@@ -14,6 +15,14 @@ app.use(express.static(path.join(__dirname, 'build')));
 
 app.get('/*', function (req, res) {
   res.sendFile(path.join(__dirname, 'build', 'index.html'));
+});
+
+httpApp.get("*", function (req, res, next) {
+    res.redirect("https://" + req.headers.host + "/" + req.path);
+});
+
+http.createServer(httpApp).listen(80, function() {
+  console.log('Le serveur vient de se lancer et écoute sur le port 80');
 });
 
 https.createServer(httpsOptions, app).listen(443, () =>{

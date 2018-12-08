@@ -7,6 +7,7 @@ class Projets extends Component{
     render(){
         return(
             <div id="projets">
+                <meta name="theme-color" content="#434e63"></meta>
                 <Navbar color="color4" />
                 <div id="fond-projets">
                     <div className="navHidden"></div>

@@ -8,6 +8,7 @@ class Accueil extends Component{
     render(){
         return(
             <div>
+                <meta name="theme-color" content="#565771"></meta>
                 <Navbar color="color1" />
                 <video autoPlay muted loop id="video">
                     <source src={videoBackground} type="video/mp4" id="video" />

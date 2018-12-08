@@ -90,6 +90,7 @@ class Contact extends Component{
     render(){
         return(
             <div id="contact">
+                <meta name="theme-color" content="#3a3848"></meta>
                 <Navbar color="color5" />
                 <SweetAlert
                     show={this.state.show}

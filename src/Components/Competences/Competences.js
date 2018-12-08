@@ -7,6 +7,7 @@ class Competences extends Component{
     render(){
         return(
             <div id="competence">
+                <meta name="theme-color" content="#7f88b3"></meta>
                 <Navbar color="color3" />
                 <div id="fond-competence">
                     <div className="navHidden"></div>

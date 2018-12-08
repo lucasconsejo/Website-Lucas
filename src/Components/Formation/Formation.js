@@ -8,6 +8,7 @@ class Formation extends Component{
     render(){
         return(
             <div id="formation">
+                <meta name="theme-color" content="#4b6182"></meta>
                 <Navbar color="color2" />
                 <div id="fond-formation">
                     <div className="navHidden"></div>
