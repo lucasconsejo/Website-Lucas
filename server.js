@@ -1,9 +1,10 @@
-const express = require('express');
+const express = require('express')
 const https = require('https')
 const http = require('http')
 const fs = require('fs')
-const path = require('path');
-const app = express();
+const path = require('path')
+const app = express()
+const httpApp = express()
 
 const httpsOptions = {
   cert: fs.readFileSync(path.join(__dirname, 'ssl', 'certificate.cert')),
