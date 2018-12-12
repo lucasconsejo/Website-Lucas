@@ -11,8 +11,9 @@ const httpsOptions = {
   key: fs.readFileSync(path.join(__dirname, 'ssl', 'privateKey.key'))
 }
 
-
 app.use(express.static(path.join(__dirname, 'build')));
+httpApp.use(express.static(path.join(__dirname, 'build')));
+
 
 app.get('/sitemap.xml', (req, res) => (
   res.status(200).sendFile('sitemap.xml')
@@ -26,8 +27,16 @@ app.get('/*', function (req, res) {
   res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
 
-httpApp.get("*", function (req, res, next) {
-    res.redirect("https://" + req.headers.host + "/" + req.path);
+httpApp.get('/sitemap.xml', (req, res) => (
+  res.status(200).sendFile('sitemap.xml')
+));
+
+httpApp.get('/robots.txt', (req, res) => (
+  res.status(200).sendFile('robots.txt')
+));
+
+httpApp.get('/*', function (req, res) {
+  res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
 
 http.createServer(httpApp).listen(80, function() {
