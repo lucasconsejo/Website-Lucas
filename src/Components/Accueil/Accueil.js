@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import '../../css/Accueil.css'
+import Footer from '../Footer/Footer.js'
 import imgProfil from '../../img/profil/photo-lucas.png'
 import videoBackground from '../../video/Very-Open-Space.mp4'
 import Navbar from '../../Components/Navbar/Navbar.js'
@@ -33,6 +34,8 @@ class Accueil extends Component{
                         </div>
                     </div>
                 </div>
+
+                <Footer />
             </div>
         )
     }

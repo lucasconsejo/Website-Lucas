@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import '../../css/Competences.css';
+import Footer from '../Footer/Footer.js'
 import CV from '../../files/CV.pdf';
 import Navbar from '../../Components/Navbar/Navbar.js'
 
@@ -103,6 +104,7 @@ class Competences extends Component{
                         </div>
                     </div>
                 </div>
+                <Footer />
             </div>
         )
     }

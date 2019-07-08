@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import '../../css/Formation.css';
+import Footer from '../Footer/Footer.js'
 import imgYnov from '../../img/formation/logo-ynov-blanc.png'
 import imgBac from '../../img/formation/logo-diplome.png'
 import Navbar from '../../Components/Navbar/Navbar.js'
@@ -43,6 +44,7 @@ class Formation extends Component{
                         </div>
                     </div>
                 </div>
+                <Footer />
             </div>
         )
     }

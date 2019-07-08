@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import LogoWetube from '../../img/projets-img/react-logo.png'
 import '../../css/Projets.css'
+import Footer from '../Footer/Footer.js'
 import Navbar from '../../Components/Navbar/Navbar.js'
                     
 class Projets extends Component{
@@ -40,6 +41,7 @@ class Projets extends Component{
                         </div>
                     </div>
                 </div>
+                <Footer />
             </div>
         )
     }
