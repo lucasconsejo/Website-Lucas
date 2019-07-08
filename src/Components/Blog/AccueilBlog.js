@@ -9,7 +9,7 @@ import imgCdiscount from "../../img/Blog/cdiscount-logo.jpg"
 class AccueilBlog extends Component{
     render(){
         return(
-            <div>
+            <div className="accueil-blog-bloc">
                 <Navbar />
                 <div id="container-blog">
                     <div id="img-fond-blog">

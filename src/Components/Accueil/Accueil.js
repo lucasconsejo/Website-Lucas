@@ -8,7 +8,7 @@ import Navbar from '../../Components/Navbar/Navbar.js'
 class Accueil extends Component{
     render(){
         return(
-            <div>
+            <div id="navbar-accueil">
                 <meta name="theme-color" content="#565771"></meta>
                 <Navbar color="color1" />
                 <video autoPlay muted loop id="video">

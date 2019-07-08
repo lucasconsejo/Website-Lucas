@@ -7,7 +7,7 @@ class BlogCdiscount extends Component{
         return(
             <div>
                 <Navbar />
-                <div id="container-blog">
+                <div id="container-blog-cdiscount">
                     <div id="img-fond-accueil">
                         
                     </div>

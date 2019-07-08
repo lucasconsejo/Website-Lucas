@@ -29,11 +29,11 @@ class App extends Component {
       <Router>
         <div>
           <Switch>
+            <Route path="/blog/stages/cdiscount" component={BlogCdiscount} />
             <Route exact path="/" component={Accueil} />
             <Route path="/competences" component={Competence} />
             <Route path="/formation" component={Formation} />
             <Route path="/projets" component={Projets} />
-            <Route path="/blog/stages/cdiscount" component={BlogCdiscount} />
             <Route path="/blog" component={AccueilBlog} />
             <Route path="/contact" component={Contact} />
             <Redirect exact from="*" to="/" />

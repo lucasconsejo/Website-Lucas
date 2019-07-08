@@ -1,11 +1,13 @@
 body{
-    overflow-y: scroll;
+    background-color: white;
+}
+#container-blog-cdiscount{
+    overflow: scroll;
 }
 /* Navbar */
 #navbar nav{
     background-color: rgb(53, 122, 107);
   }
-  
   /* Accueil Stage */
   #blog-intro ul{
     list-style: none;
