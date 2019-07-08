@@ -6,7 +6,7 @@ body{
 }
 /* Navbar */
 #navbar nav{
-    background-color: rgb(53, 122, 107);
+    background-color: #293545;
   }
   /* Accueil Stage */
   #blog-intro ul{
@@ -50,7 +50,7 @@ body{
     height: 500px;
   }
   #img-fond-blog{
-    background-color: rgb(53, 122, 107);
+    background-color: #293545;
     height: 250px;
   }
   #blog-intro{

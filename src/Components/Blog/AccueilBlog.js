@@ -52,7 +52,7 @@ class AccueilBlog extends Component{
                             </div> 
                             
                             <div id="accueil-copyright" className="offset-md-3 col-md-7 offset-sm-1 col-sm-9 offset-0 offset-xl-3 col-8 col-xl-5 offset-lg-3 col-lg-6">
-                                <p className="">Copyright © 2018 Lucas Consejo - Tout droits réservés</p>
+                                <p className="">Copyright © 2019 Lucas Consejo - Tout droits réservés</p>
                             </div>
                         </div>
                     </div>
