@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import Navbar from '../NavbarBlog/NavbarBlog'
 
+
 class BlogCdiscount extends Component{
     render(){
         return(

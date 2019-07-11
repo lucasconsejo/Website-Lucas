@@ -14,7 +14,7 @@ class AccueilBlog extends Component{
                 <div id="container-blog">
                     <div id="img-fond-blog-accueil">
                         <h3 className="text-light text-center">Bienvenue sur le blog de Lucas Consejo</h3>
-                        <p className="text-light text-center">Vous y trouverez les différents rapport de stage</p>
+                        <p className="text-light text-center">Vous y trouverez les différents rapports de stage</p>
                     </div>
                 
                     <div className="container">
@@ -30,8 +30,8 @@ class AccueilBlog extends Component{
                                             </div>
                                             <div id="blog-stage-txt-list">
                                                 <h5>Stage développeur à Cdiscount</h5>
-                                                <p className="lien-p">Date : Du 1 Juillet au 13 Septembre 2019</p>
-                                                <p className="lien-p">Durée : 2 mois</p>
+                                                <p className="lien-p">Date : <span className="date">Du 1 Juillet au 13 Septembre 2019</span></p>
+                                                <p className="lien-p">Durée : <span className="date">2 mois</span></p>
                                             </div>
                                         </div>
                                     </Link>
@@ -53,7 +53,7 @@ class AccueilBlog extends Component{
                             </div> 
                             
                             <div id="accueil-copyright" className="offset-md-3 col-md-7 offset-sm-1 col-sm-9 offset-0 offset-xl-3 col-8 col-xl-5 offset-lg-3 col-lg-6">
-                                <p className="">Copyright © 2019 Lucas Consejo - Tout droits réservés</p>
+                                <p className="">Copyright © 2019 Lucas Consejo - Tous droits réservés</p>
                             </div>
                         </div>
                     </div>

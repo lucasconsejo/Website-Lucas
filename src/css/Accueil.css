@@ -133,6 +133,9 @@ video{
     .fixed-bottom{
         visibility: hidden;
     }
+    #img-fond-accueil{
+        height: 150px;
+    }
   }
 
 @media screen and (min-width: 992px){

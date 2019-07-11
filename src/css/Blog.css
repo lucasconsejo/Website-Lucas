@@ -58,6 +58,9 @@ body{
     background-color: #293545;
     height: 250px;
   }
+  .date{
+    color: #c73a0f;
+  }
 
   #img-fond-blog-accueil{
     background-color: #293545;
@@ -104,3 +107,88 @@ body{
   #copyright-accueil p{
     line-height: 40px;
   }
+  @media screen and (max-width: 576px) {
+    #img-fond-accueil{
+      height: 200px;
+    }
+    .accueil-blog-bloc #blog-intro h2{
+      font-size: 22px;
+    }
+    #blog-stage-img-list img{
+     display: none;
+    }
+    #blog-stage-txt-list h5{
+      margin-left: 10px;
+      margin-top: 5px;
+      font-size: 16px;
+    }
+    #blog-stage-txt-list h5:hover{
+      color: rgb(107, 107, 107);
+    }
+    .lien-p{
+      margin-left: 10px;
+      color: rgb(73, 73, 73);
+    }
+    .lien-p-last{
+      margin-bottom: 5px;
+    }
+    #blog-intro h3{
+     font-size: 22px;
+    }
+    #img-fond-blog-accueil h3{
+      font-size: 18px;
+      margin-top: 5px;
+    }
+    #img-fond-blog-accueil p{
+      font-size: 14px;
+    }
+    #img-fond-blog-accueil{
+      padding-top: 40px;
+      padding-bottom: 35px;
+    }
+  
+  }
+  @media screen and (min-width: 992px){
+    #img-fond-accueil{
+      height: 400px;
+    }
+  }
+  @media screen and (min-width: 768px) and (max-width: 992px){
+    #img-fond-accueil{
+      height: 300px;
+    }
+  }
+  @media screen and (min-width: 576px) and (max-width: 768px){
+    #img-fond-accueil{
+      height: 250px;
+    }
+    .accueil-blog-bloc #blog-intro h2{
+      font-size: 27px;
+    }
+    #blog-stage-txt-list h5{
+      margin-left: 10px;
+      margin-top: 17px;
+      font-size: 17px;
+    }
+    #blog-stage-txt-list h5:hover{
+      color: rgb(107, 107, 107);
+    }
+    .lien-p{
+      margin-left: 10px;
+      color: rgb(73, 73, 73);
+    }
+    .lien-p-last{
+      margin-bottom: 5px;
+    }
+    #blog-intro h3{
+     font-size: 22px;
+    }
+    #img-fond-blog-accueil h3{
+      font-size: 23px;
+      margin-top: 5px;
+    }
+    #img-fond-blog-accueil p{
+      font-size: 18px;
+    }
+  }
+
