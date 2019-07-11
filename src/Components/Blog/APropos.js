@@ -10,6 +10,7 @@ class APropos extends Component{
     render(){
         return(
             <div className="accueil-blog-bloc">
+                <meta name="theme-color" content="#293545"></meta>
                 <Navbar />
                 <div id="container-blog">
                     <div id="img-fond-blog">

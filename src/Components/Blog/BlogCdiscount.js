@@ -6,6 +6,7 @@ class BlogCdiscount extends Component{
     render(){
         return(
             <div>
+                <meta name="theme-color" content="#293545"></meta>
                 <Navbar />
                 <br />
                 <br />
