@@ -12,10 +12,15 @@ body{
   #blog-intro ul{
     list-style: none;
     padding: 0;
+  }
+  #blog-intro li{
+    list-style: none;
+    padding: 0;
     margin-top: 20px;
     border: 1px solid rgb(165, 165, 165);
     border-radius: 5px;
   }
+
   #blog-stage-img-list img{
     width: 180px;
     border-top-left-radius: 5px;
@@ -47,11 +52,17 @@ body{
   #img-fond-accueil{
     background-image: url(../img/Blog/fond-cdiscount.png);
     background-size: cover;
-    height: 500px;
+    height: 400px;
   }
   #img-fond-blog{
     background-color: #293545;
     height: 250px;
+  }
+
+  #img-fond-blog-accueil{
+    background-color: #293545;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
   #blog-intro{
     margin-top: 30px;

@@ -17,10 +17,20 @@ class Navbar extends Component{
                     <div className="collapse navbar-collapse" id="navbarNav">
                         <ul className="navbar-nav">
                             <li className="nav-item">
-                                <Link to="/blog/stages" className="nav-link">
-                                    Stages
+                                <Link to="/blog" className="nav-link">
+                                    Accueil
                                     <span className="sr-only">(current)</span>
                                 </Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link to="/blog/a-propos" className="nav-link">
+                                    A propos 
+                                </Link>
+                            </li>
+                            <li className="nav-item">
+                                <a href="https://lucasconsejo.fr/contact" target="_blank" rel="noopener noreferrer" className="nav-link">
+                                    Contact
+                                </a>
                             </li>
                             <li className="nav-item">
                                 <a href="https://lucasconsejo.fr" target="_blank" rel="noopener noreferrer" className="nav-link">

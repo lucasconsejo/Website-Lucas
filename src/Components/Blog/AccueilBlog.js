@@ -10,10 +10,11 @@ class AccueilBlog extends Component{
     render(){
         return(
             <div className="accueil-blog-bloc">
-                <Navbar />
+               <Navbar /><br /><br />
                 <div id="container-blog">
-                    <div id="img-fond-blog">
-                    
+                    <div id="img-fond-blog-accueil">
+                        <h3 className="text-light text-center">Bienvenue sur le blog de Lucas Consejo</h3>
+                        <p className="text-light text-center">Vous y trouverez les différents rapport de stage</p>
                     </div>
                 
                     <div className="container">
@@ -22,7 +23,7 @@ class AccueilBlog extends Component{
 
                             <ul>
                                 <li>
-                                    <Link to="/blog/stages/cdiscount" className="lien">
+                                    <Link to="/blog/stage/cdiscount" className="lien">
                                         <div id="bloc-stage-list">
                                             <div id="blog-stage-img-list">
                                                 <img src={imgCdiscount} alt="img cdiscount" />
