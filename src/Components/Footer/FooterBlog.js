@@ -6,7 +6,7 @@ class FooterBlog extends Component{
 
     render(){
         return(
-            <div className="container mb-3">
+            <div id="footer-blog" className="container mb-3">
                 <div className="row">
                     <div className="col-xl-1 col-lg-2 col-md-2 col-sm-2 col-3">
                         <div className="row">
