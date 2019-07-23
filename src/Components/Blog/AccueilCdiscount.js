@@ -11,6 +11,16 @@ import imgBilan from "../../img/Blog/bilan.jpg"
 import Footer from '../Footer/FooterBlog'
 
 class AccueilCdiscount extends Component{
+
+    constructor(props){
+        super(props);
+        this.goBack = this.goBack.bind(this);
+    }
+
+    goBack(){
+        this.props.history.goBack();
+    }
+
     render(){
         return(
             <div className="accueil-blog-bloc">
@@ -23,6 +33,7 @@ class AccueilCdiscount extends Component{
                 
                     <div className="container">
                         <div id="blog-intro">
+                            <p className="previous-page" onClick={this.goBack}>Retour aux Stages</p>
                             <h2>Blog de stage - Développeur à Cdiscount</h2>
 
                             <p>
@@ -39,8 +50,8 @@ class AccueilCdiscount extends Component{
                                             </div>
                                             <div id="blog-stage-txt-list">
                                                 <h5>Accueil - Intégration dans l'entreprise</h5>
-                                                <p className="lien-p">Publié : <span className="date">11 juillet 2019</span></p>
-                                                <p className="lien-p lien-p-last">Dernière modification : <span className="date">11 juillet 2019</span></p>
+                                                <p className="lien-p">Publié : <span className="date">12 juillet 2019</span></p>
+                                                <p className="lien-p lien-p-last">Dernière modification : <span className="date">23 juillet 2019</span></p>
                                             </div>
                                         </div>
                                     </Link>
@@ -53,8 +64,8 @@ class AccueilCdiscount extends Component{
                                             </div>
                                             <div id="blog-stage-txt-list">
                                                 <h5>Mission effectuées - l'aspect technique</h5>
-                                                <p className="lien-p">Publié : <span className="date">11 juillet 2019</span></p>
-                                                <p className="lien-p lien-p-last">Dernière modification : <span className="date">11 juillet 2019</span></p>
+                                                <p className="lien-p">Publié : <span className="date">12 juillet 2019</span></p>
+                                                <p className="lien-p lien-p-last">Dernière modification : <span className="date">12 juillet 2019</span></p>
                                             </div>
                                         </div>
                                     </Link>
@@ -67,8 +78,8 @@ class AccueilCdiscount extends Component{
                                             </div>
                                             <div id="blog-stage-txt-list">
                                                 <h5>Connaissances mobilisées</h5>
-                                                <p className="lien-p">Publié : <span className="date">11 juillet 2019</span></p>
-                                                <p className="lien-p lien-p-last">Dernière modification : <span className="date">11 juillet 2019</span></p>
+                                                <p className="lien-p">Publié : <span className="date">12 juillet 2019</span></p>
+                                                <p className="lien-p lien-p-last">Dernière modification : <span className="date">12 juillet 2019</span></p>
                                             </div>
                                         </div>
                                     </Link>
@@ -81,8 +92,8 @@ class AccueilCdiscount extends Component{
                                             </div>
                                             <div id="blog-stage-txt-list">
                                                 <h5>Difficultés rencontrées et les solutions apportées</h5>
-                                                <p className="lien-p">Publié : <span className="date">11 juillet 2019</span></p>
-                                                <p className="lien-p lien-p-last">Dernière modification : <span className="date">11 juillet 2019</span></p>
+                                                <p className="lien-p">Publié : <span className="date">12 juillet 2019</span></p>
+                                                <p className="lien-p lien-p-last">Dernière modification : <span className="date">12 juillet 2019</span></p>
                                             </div>
                                         </div>
                                     </Link>
@@ -95,8 +106,8 @@ class AccueilCdiscount extends Component{
                                             </div>
                                             <div id="blog-stage-txt-list">
                                                 <h5>Compétences acquises</h5>
-                                                <p className="lien-p">Publié : <span className="date">11 juillet 2019</span></p>
-                                                <p className="lien-p lien-p-last">Dernière modification : <span className="date">11 juillet 2019</span></p>
+                                                <p className="lien-p">Publié : <span className="date">12 juillet 2019</span></p>
+                                                <p className="lien-p lien-p-last">Dernière modification : <span className="date">12 juillet 2019</span></p>
                                             </div>
                                         </div>
                                     </Link>
@@ -109,8 +120,8 @@ class AccueilCdiscount extends Component{
                                             </div>
                                             <div id="blog-stage-txt-list">
                                                 <h5>Le bilan de ce stage</h5>
-                                                <p className="lien-p">Publié : <span className="date">11 juillet 2019</span></p>
-                                                <p className="lien-p lien-p-last">Dernière modification : <span className="date">11 juillet 2019</span></p>
+                                                <p className="lien-p">Publié : <span className="date">12 juillet 2019</span></p>
+                                                <p className="lien-p lien-p-last">Dernière modification : <span className="date">12 juillet 2019</span></p>
                                             </div>
                                         </div>
                                     </Link>

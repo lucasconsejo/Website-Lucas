@@ -51,8 +51,19 @@ body{
   /* Blog */
   #img-fond-accueil{
     background-image: url(../img/Blog/fond-cdiscount.png);
+    background-size: auto;
+    height: 400px;
+  }
+  #img-fond-accueil-entreprise{
+    background-image: url(../img/Blog/welcome.jpg);
     background-size: cover;
     height: 400px;
+  }
+  .previous-page{
+    color: #0db2ff;
+  }
+  .previous-page:hover{
+    cursor: pointer;
   }
   #img-fond-blog{
     background-color: #293545;
@@ -109,6 +120,9 @@ body{
   }
   #footer-mobile{
     margin-top: 240px;
+  }
+  #bloc-article #blog-intro h2{
+    font-size: 18px;
   }
   @media screen and (max-width: 576px) {
     #img-fond-accueil{

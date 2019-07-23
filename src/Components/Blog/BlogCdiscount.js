@@ -5,7 +5,7 @@ import Navbar from '../NavbarBlog/NavbarBlog'
 class BlogCdiscount extends Component{
     render(){
         return(
-            <div>
+            <div id="bloc-article">
                 <meta name="theme-color" content="#293545"></meta>
                 <Navbar />
                 <br />
