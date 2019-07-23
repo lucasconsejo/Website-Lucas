@@ -51,7 +51,7 @@ body{
   /* Blog */
   #img-fond-accueil{
     background-image: url(../img/Blog/fond-cdiscount.png);
-    background-size: auto;
+    background-size: cover;
     height: 400px;
   }
   #img-fond-accueil-entreprise{
@@ -59,18 +59,29 @@ body{
     background-size: cover;
     height: 400px;
   }
+  #lien-cdiscount{
+    color: #0db2ff;
+  }
   .previous-page{
     color: #0db2ff;
   }
   .previous-page:hover{
     cursor: pointer;
   }
+
   #img-fond-blog{
     background-color: #293545;
     height: 250px;
   }
   .date{
     color: #c73a0f;
+  }
+  #color-detail{
+    color: #c73a0f;
+  }
+  #writter{
+    font-size: 17px;
+    color: #4d4d4d;
   }
 
   #img-fond-blog-accueil{

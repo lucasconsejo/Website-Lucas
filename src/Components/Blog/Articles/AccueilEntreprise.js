@@ -1,18 +1,10 @@
 import React, {Component} from 'react';
+import { Link } from 'react-router-dom'
 import Navbar from '../../NavbarBlog/NavbarBlog'
 import Footer from '../../Footer/FooterBlog'
 
 class AccueilEntreprise extends Component{
     
-    constructor(props){
-        super(props);
-        this.goBack = this.goBack.bind(this);
-    }
-
-    goBack(){
-        this.props.history.goBack();
-    }
-
     render(){
         return(
             <div>
@@ -24,7 +16,7 @@ class AccueilEntreprise extends Component{
                 
                     <div className="container">
                         <div id="blog-intro">
-                            <p className="previous-page" onClick={this.goBack}>Retour aux Articles</p>
+                            <p className="previous-page"><Link to="/blog" className="previous-page">Accueil</Link> > <Link to="/blog/stage/cdiscount" className="previous-page">Stage Cdiscount</Link> > <Link to="/blog/stage/cdiscount/article/accueil-integration-dans-l-entreprise" className="previous-page">Article Accueil - Intégration dans l'entreprise</Link></p>
                             <h2>Accueil - Intégration dans l'entreprise</h2>
 
                             <p>Has autem provincias, quas Orontes ambiens amnis imosque pedes Cassii montis illius celsi praetermeans funditur in Parthenium mare, Gnaeus Pompeius superato Tigrane regnis Armeniorum abstractas dicioni Romanae coniunxit.

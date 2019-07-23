@@ -12,15 +12,6 @@ import Footer from '../Footer/FooterBlog'
 
 class AccueilCdiscount extends Component{
 
-    constructor(props){
-        super(props);
-        this.goBack = this.goBack.bind(this);
-    }
-
-    goBack(){
-        this.props.history.goBack();
-    }
-
     render(){
         return(
             <div className="accueil-blog-bloc">
@@ -33,14 +24,32 @@ class AccueilCdiscount extends Component{
                 
                     <div className="container">
                         <div id="blog-intro">
-                            <p className="previous-page" onClick={this.goBack}>Retour aux Stages</p>
-                            <h2>Blog de stage - Développeur à Cdiscount</h2>
+                            <p className="previous-page"><Link to="/blog" className="previous-page">Accueil</Link> > <Link to="/blog/stage/cdiscount" className="previous-page">Stage Cdiscount</Link></p>
+                            <h2>Blog de stage - Développeur à Cdiscount</h2><br/>
 
+                            <h4>Présentation de l'entreprise</h4>
                             <p>
-                                Has autem provincias, quas Orontes ambiens amnis imosque pedes Cassii montis illius celsi praetermeans funditur in Parthenium mare, Gnaeus Pompeius superato Tigrane regnis Armeniorum abstractas dicioni Romanae coniunxit.
+                                <a href="https://www.cdiscount.com/" target="_blank"  rel="noopener noreferrer" id="lien-cdiscount">Cdiscount</a> est une enseigne de e-commerce créée en 1998 avant de devenir deux ans plus tard une filiale du Groupe Casino. A l’origine simple vendeur de CD d’occasion son offre s’est peu à peu diversifiée pour aujourd’hui proposer plus de 30 millions de produits à la vente réparties en 15 univers (jeux vidéo, informatique, literie, Auto Moto…). Une diversification que l’on retrouve au niveau des services proposés avec entre autres : forfaits mobile, services financiers, fournisseur d’électricité, voyage, service de déménagement ainsi qu'un nouveau service santé.
+                                <br/>
+                                <br/>L'entreprise, présidée par <span id="color-detail">Emmanuel Grenier</span>, est depuis 2000 une filiale du groupe Casino qui en détient aujourd'hui la quasi-totalité du capital.
+                                <br />
+                                <br />
+                                Avec un chiffre d'affaires de <span id="color-detail">2 137 millions €</span> en 2017, Cdiscount est la plus grosse entreprise <span id="color-detail">d'Aquitaine</span>.
+                                <br/><i><a href="https://www.verif.com/Hit-parade/01-CA/02-Par-region/E-Aquitaine" target="_blank"  rel="noopener noreferrer" id="lien-cdiscount">Voir le classement</a></i> 
+                                <br/>
+                                <br/>Au 3ème trimestre 2018, Cdiscount était le <span id="color-detail">2ème site e-commerce le plus visité en France</span> après Amazon, avec 18 946 000 visiteurs uniques moyens par mois.
+                                <br/><i><a href="https://img-0.journaldunet.com/MpmY1Yo_8_XqJicmV-NWOD8GOo0=/1080x/smart/f177154130d34a15be7ea998380dc22a/ccmcms-jdn/10980278.jpg" target="_blank"  rel="noopener noreferrer" id="lien-cdiscount">Voir le classement</a></i> 
+                                <br/>
+                                <br/>Le siège social est situé à Bordeaux et est proche de l'entrepôt principal, à Cestas.
+                                <br/><i>Siege social</i> : <a href="https://www.google.fr/maps/place/120+Quai+de+Bacalan,+33300+Bordeaux/@44.8607345,-0.554989,638m/data=!3m2!1e3!4b1!4m5!3m4!1s0xd5528904bae78a7:0xafde0f2c76a2fcea!8m2!3d44.8607345!4d-0.5528003" target="_blank"  rel="noopener noreferrer" id="lien-cdiscount">120-126 quai de Bacalan, 33000 Bordeaux</a>&nbsp;&nbsp;&nbsp;&nbsp;<i>Tél</i> : <a href="tel:0770631681" id="lien-cdiscount">07 70 63 16 81</a>
+                                <br/><i>Entrepôt principal</i> : <a href="https://www.google.fr/maps/place/Chemin+du+Pot+au+Pin,+33610+Cestas/@44.7126109,-0.7593654,1169m/data=!3m1!1e3!4m5!3m4!1s0xd54c2b6ca2028b3:0xbc29a4b049d46a03!8m2!3d44.7120951!4d-0.7595002" target="_blank"  rel="noopener noreferrer" id="lien-cdiscount">Chemin du Pot au Pin, 33610 Cestas</a>&nbsp;&nbsp;&nbsp;&nbsp;<i>Tél</i> : <a href="tel:0970809050" id="lien-cdiscount">09 70 80 90 50</a>
+                                <br/>
+                                <br/><b>Mon stage a donc lieu au siège social de Cdiscount à Bordeaux, où j'y suis développeur Java, du 1er Juillet au 13 Septembre 2019.</b>
+                                <br/>
+                                <br/>
                             </p>
                     
-                            <h3>Articles</h3>
+                            <h3>Articles <span id="writter">écrit par Lucas Consejo</span></h3>
                             <ul>
                                 <li>
                                     <Link to="/blog/stage/cdiscount/article/accueil-integration-dans-l-entreprise" className="lien">
