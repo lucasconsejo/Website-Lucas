@@ -9,6 +9,9 @@ import AccueilBlog from "../Components/Blog/AccueilBlog"
 import AccueilCdiscount from "../Components/Blog/AccueilCdiscount"
 import BlogCdiscount from "../Components/Blog/BlogCdiscount"
 import AccueilEntreprise from "../Components/Blog/Articles/AccueilEntreprise"
+import MissionEffectuees from "../Components/Blog/Articles/MissionEffectuees"
+import ConnaissanceMobilisées from "../Components/Blog/Articles/ConnaissanceMobilisées"
+import DifficultésRencontrees from "../Components/Blog/Articles/DifficultésRencontrees"
 //import APropos from "../Components/Blog/APropos"
 import Contact from '../Components/Contact/Contact.js'
 
@@ -33,10 +36,10 @@ class App extends Component {
         <div>
           <Switch>
             <Route path="/blog/stage/cdiscount/article/accueil-integration-dans-l-entreprise" component={AccueilEntreprise} />
-            <Route path="/blog/stage/cdiscount/article/mission-effectuees-l-aspect-technique" component={BlogCdiscount} />
+            <Route path="/blog/stage/cdiscount/article/mission-effectuees-l-aspect-technique" component={MissionEffectuees} />
             <Route path="/blog/stage/cdiscount/article/competences-acquises" component={BlogCdiscount} />
-            <Route path="/blog/stage/cdiscount/article/difficultes-rencontrees-et-les-solutions-apportees" component={BlogCdiscount} />
-            <Route path="/blog/stage/cdiscount/article/connaissances-mobilisees" component={BlogCdiscount} />
+            <Route path="/blog/stage/cdiscount/article/difficultes-rencontrees-et-les-solutions-apportees" component={DifficultésRencontrees} />
+            <Route path="/blog/stage/cdiscount/article/connaissances-mobilisees" component={ConnaissanceMobilisées} />
             <Route path="/blog/stage/cdiscount/article/Le-bilan-de-ce-stage" component={BlogCdiscount} />
             <Route path="/blog/stage/cdiscount" component={AccueilCdiscount} />
             <Route path="/blog/a-propos" component={AccueilBlog} />

@@ -59,6 +59,21 @@ body{
     background-size: cover;
     height: 400px;
   }
+  #img-fond-mission-effectuees{
+    background-image: url(../img/Blog/mission.jpg);
+    background-size: cover;
+    height: 400px;
+  }
+  #img-fond-connaissance-mobilisees{
+    background-image: url(../img/Blog/connaissance.jpg);
+    background-size: cover;
+    height: 400px;
+  }
+  #img-fond-difficultes-rencontrees{
+    background-image: url(../img/Blog/difficulte.jpg);
+    background-size: cover;
+    height: 400px;
+  }
   #lien-cdiscount{
     color: #0db2ff;
   }
