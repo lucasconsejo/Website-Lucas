@@ -122,7 +122,7 @@ class AccueilCdiscount extends Component{
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link to="/blog/stage/cdiscount/article/Le-bilan-de-ce-stage" className="lien">
+                                    <Link to="/blog/stage/cdiscount/article/le-bilan-de-ce-stage" className="lien">
                                         <div id="bloc-stage-list">
                                             <div id="blog-stage-img-list">
                                                 <img src={imgBilan} alt="img bilan" />

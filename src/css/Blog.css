@@ -74,6 +74,16 @@ body{
     background-size: cover;
     height: 400px;
   }
+  #img-fond-competences-acquises{
+    background-image: url(../img/Blog/competence.jpg);
+    background-size: cover;
+    height: 400px;
+  }
+  #img-fond-bilan-stage{
+    background-image: url(../img/Blog/bilan.jpg);
+    background-size: cover;
+    height: 400px;
+  }
   #lien-cdiscount{
     color: #0db2ff;
   }
