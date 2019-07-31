@@ -6,6 +6,11 @@ import imgCdiscount from "../../img/Blog/cdiscount-logo.jpg"
 import Footer from '../Footer/FooterBlog'
 
 class AccueilBlog extends Component{
+
+    componentDidMount() {
+        window.scrollTo(0, 0)
+    }
+     
     render(){
         return(
             <div className="accueil-blog-bloc">

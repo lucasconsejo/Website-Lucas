@@ -5,6 +5,10 @@ import Footer from '../../Footer/FooterBlog'
 
 class DifficultésRencontrees extends Component{
 
+    componentDidMount() {
+        window.scrollTo(0, 0)
+    }
+    
     render(){
         return(
             <div>

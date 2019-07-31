@@ -5,6 +5,10 @@ import Footer from '../../Footer/FooterBlog'
 
 class AccueilEntreprise extends Component{
     
+    componentDidMount() {
+        window.scrollTo(0, 0)
+    }
+
     render(){
         return(
             <div>
@@ -27,24 +31,24 @@ class AccueilEntreprise extends Component{
                             <h3>I. Le premier jour</h3>
 
                             <p>
-                                Je suis arrivé le Lundi 1er Juillet 2019 à 9h30 et la première étape était d'aller me présenter à l'accueil. J'étais loin d'être le seul arrivant au sein de Cdiscount. J'ai donc attendu ~15min dans la fil d'attente.
-                                Une fois l'attente terminée, on m'a remis mon badge d'entrée, un cahier de note, et...<span id="color-detail">une boîte de bienvenue</span> dans l'entreprise avec plein de petits cadeaux. &#128522;
+                                Je suis arrivé le lundi 1er juillet 2019 à 9h30 et la première étape était d'aller me présenter à l'accueil. J'étais loin d'être le seul arrivant au sein de Cdiscount. J'ai donc attendu ~15min dans la file d'attente.
+                                Une fois l'attente terminée, on m'a remis mon badge d'entrée, un cahier de notes, et...<span id="color-detail">une boîte de bienvenue</span> dans l'entreprise avec plein de petits cadeaux. &#128522;
                                 <br />
                                 <br />
                                 Ensuite, j'ai été accueilli par <span id="color-detail">Isabelle Cardoso</span> (<span id="color-detail">Chef de projet</span>) et elle m'a accompagné à mon nouveau bureau des 2 prochains mois. Direction donc un grand open-space nommé "Le cloud", où j'ai rencontré ma nouvelle équipe. &#128578;
                                 <br />
-                                <span id="color-detail">Stéphane Giauque</span> était aussi présent (j'ai eu mon entretien avec lui et c'est le <span id="color-detail">Directeur métiers IT</span>). Il m'a fourni mon ordinateur portable. J'ai ensuite du installer le matériel à mon bureau, à savoir : 
+                                <span id="color-detail">Stéphane Giauque</span> était aussi présent (j'ai eu mon entretien avec lui et c'est le <span id="color-detail">Directeur métiers IT</span>). Il m'a fourni mon ordinateur portable. J'ai ensuite dû installer le matériel à mon bureau, à savoir : 
                                <ul>
                                     <li>Connecter mon ordi portable à un dock</li>
                                     <li>Brancher les 2 écrans supplémentaires</li>
                                     <li>Brancher le clavier / la souris / le casque audio.</li>
                                 </ul>
-                                Bien, mon poste est installé ! Me voilà donc avec 3 écrans ! Place maintenant à l'installation des logiciels dont j'aurais besoin pour mes futurs missions ainsi que récupérer mes identifiants pour les mails et les différents sites/plateformes de Cdiscount en interne.
+                                Bien, mon poste est installé ! Me voilà donc avec 3 écrans ! Place maintenant à l'installation des logiciels dont j'aurais besoin pour mes futures missions ainsi que récupérer mes identifiants pour les mails et les différents sites/plateformes de Cdiscount en interne.
                                 <br />
                                 <br />
-                                Parmis tout ces outils, les plus importants sont :
+                                Parmi tous ces outils, les plus importants sont :
                                 <ul>
-                                    <li><a href="https://products.office.com/fr-fr/microsoft-teams/group-chat-software" target="_blank" className="previous-page">Teams</a> / <a href="https://www.skype.com/fr/" target="_blank" className="previous-page">Skype</a> pour communiquer entre chaque personne de l'équipe mais aussi avec d'autres personnes de d'autres service.</li>
+                                    <li><a href="https://products.office.com/fr-fr/microsoft-teams/group-chat-software" target="_blank" className="previous-page">Teams</a> / <a href="https://www.skype.com/fr/" target="_blank" className="previous-page">Skype</a> pour communiquer entre chaque personne de l'équipe mais aussi avec d'autres personnes de d'autres services.</li>
                                     <li><a href="https://outlook.live.com/owa/" target="_blank" className="previous-page">Outlook</a> pour les mails</li>
                                     <li><a href="https://www.jetbrains.com/idea/" target="_blank" className="previous-page">IntelliJ</a> (dans mon cas) qui est un IDE pour pouvoir programmer en Java.</li>
                                     <li><a href="https://visualstudio.microsoft.com/fr/tfs/" target="_blank" className="previous-page">TFS</a> qui fait office de server git au sein de Cdiscount.</li>
@@ -59,12 +63,12 @@ class AccueilEntreprise extends Component{
                             <h3>II. Présentation de ma première mission</h3>
 
                             <p>
-                                <span id="color-detail">Isabelle</span> m'a donc présenté ma première mission de ce mois-ci. Mais je ne vais pas trop m'attarder dessus ici, un article y sera dédié.
+                                <span id="color-detail">Isabelle</span> m'a donc présenté ma première mission de ce mois-ci. Mais je ne vais pas trop m'attarder dessus, ici, un article y sera dédié.
                                 <br />
                                 Durant ce mois, je vais devoir migrer un <span id="color-detail">microservice</span> qui est sur Mésos/Marathon, vers <span id="color-detail">Kubernetes</span>. Le microservice (son petit nom est "<span id="color-detail">middle-search-loader-offer</span>") est sous Java 8. Avant de passer à la migration vers Kubernetes, il faut d'abord passer de Java 8 à Java 10.
                                 <br />
                                 <br />
-                                Vous n'avez pas tout compris ? <i>Pas de panique !</i> &#128516; Je vous invite à aller voir l'article dédié à ce sujet. <Link to="/blog/stage/cdiscount/article/mission-effectuees-l-aspect-technique" className="previous-page">Mission effectuées - l'aspect technique</Link>
+                                Vous n'avez pas tout compris ? <i>Pas de panique !</i> &#128516; Je vous invite à aller voir l'article dédié à ce sujet. <Link to="/blog/stage/cdiscount/article/mission-effectuees-l-aspect-technique" className="previous-page">Mission effectuée - l'aspect technique</Link>
                             </p>
                         </div>
 
@@ -81,10 +85,10 @@ class AccueilEntreprise extends Component{
                                 <li>
                                     <h5>L'aspect travail</h5>
                                     <p>
-                                        Avant de se lancer complétement dans la mission, il faut prendre connaissance du contexte, du pourquoi on fait ça, où se situe le microservice par rapport aux autres, quelle base de données est appélée, etc...
+                                        Avant de se lancer complétement dans la mission, il faut prendre connaissance du contexte, du pourquoi on fait ça, où se situe le microservice par rapport aux autres, quelle base de données est appelée, etc...
                                         <br />
                                         Pour ça, il y a <span id="color-detail">Confluence</span> ! Il y a de la documentation écrite par les internes de Cdiscoun, pour presque tout. J'ai donc passé un peu de temps à lire tout ça, en savoir plus sur le contexte global chez Cdiscount,
-                                        comment sont reliées les différentes base de données, etc...
+                                        comment sont reliées les différentes bases de données, etc...
                                         <br />
                                         Mais le gros plus, et pas uniquement pour la doc, mais aussi pour la mission et autres => Si vous êtes bloqués ou perdu, il y aura toujours quelqu'un pour vous aider !
                                     </p>

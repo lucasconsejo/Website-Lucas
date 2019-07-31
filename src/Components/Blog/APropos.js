@@ -7,6 +7,11 @@ import logoGit from '../../img/Footer/logo-git.png'
 import imgCdiscount from "../../img/Blog/cdiscount-logo.jpg"
 
 class APropos extends Component{
+
+    componentDidMount() {
+        window.scrollTo(0, 0)
+    }
+    
     render(){
         return(
             <div className="accueil-blog-bloc">
