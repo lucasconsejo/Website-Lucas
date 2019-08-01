@@ -37,7 +37,7 @@ class App extends Component {
         <div>
           <Switch>
             <Route path="/blog/stage/cdiscount/article/accueil-integration-dans-l-entreprise" component={AccueilEntreprise} />
-            <Route path="/blog/stage/cdiscount/article/mission-effectuees-l-aspect-technique" component={MissionEffectuees} />
+            <Route path="/blog/stage/cdiscount/article/la-première-mission-l-aspect-technique" component={MissionEffectuees} />
             <Route path="/blog/stage/cdiscount/article/competences-acquises" component={CompetencesAcquises} />
             <Route path="/blog/stage/cdiscount/article/difficultes-rencontrees-et-les-solutions-apportees" component={DifficultésRencontrees} />
             <Route path="/blog/stage/cdiscount/article/connaissances-mobilisees" component={ConnaissanceMobilisées} />

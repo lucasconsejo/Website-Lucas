@@ -68,7 +68,7 @@ class AccueilEntreprise extends Component{
                                 Durant ce mois, je vais devoir migrer un <span id="color-detail">microservice</span> qui est sur Mésos/Marathon, vers <span id="color-detail">Kubernetes</span>. Le microservice (son petit nom est "<span id="color-detail">middle-search-loader-offer</span>") est sous Java 8. Avant de passer à la migration vers Kubernetes, il faut d'abord passer de Java 8 à Java 10.
                                 <br />
                                 <br />
-                                Vous n'avez pas tout compris ? <i>Pas de panique !</i> &#128516; Je vous invite à aller voir l'article dédié à ce sujet. <Link to="/blog/stage/cdiscount/article/mission-effectuees-l-aspect-technique" className="previous-page">Mission effectuée - l'aspect technique</Link>
+                                Vous n'avez pas tout compris ? <i>Pas de panique !</i> &#128516; Je vous invite à aller voir l'article dédié à ce sujet. <Link to="/blog/stage/cdiscount/article/la-première-mission-l-aspect-technique" className="previous-page">La première mission - l'aspect technique</Link>
                             </p>
                         </div>
 

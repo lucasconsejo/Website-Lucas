@@ -70,15 +70,15 @@ class AccueilCdiscount extends Component{
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link to="/blog/stage/cdiscount/article/mission-effectuees-l-aspect-technique" className="lien">
+                                    <Link to="/blog/stage/cdiscount/article/la-première-mission-l-aspect-technique" className="lien">
                                         <div id="bloc-stage-list">
                                             <div id="blog-stage-img-list">
                                                 <img src={imgMission} alt="img mission" />
                                             </div>
                                             <div id="blog-stage-txt-list">
-                                                <h5>Mission effectuées - l'aspect technique</h5>
+                                                <h5>La première mission - l'aspect technique</h5>
                                                 <p className="lien-p">Publié : <span className="date">12 juillet 2019</span></p>
-                                                <p className="lien-p lien-p-last">Dernière modification : <span className="date">24 juillet 2019</span></p>
+                                                <p className="lien-p lien-p-last">Dernière modification : <span className="date">1 Août 2019</span></p>
                                             </div>
                                         </div>
                                     </Link>
