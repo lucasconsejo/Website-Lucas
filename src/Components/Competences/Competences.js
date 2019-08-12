@@ -99,7 +99,7 @@ class Competences extends Component{
 
                         <div className="row mt-3">
                             <div className="col-lg-6">
-                                <p className="text-light">SQL</p>
+                                <p className="text-light">MySQL / Postgre / MongoDB</p>
                                 <div className="progress pg-height">
                                     <div id="pg-30" className="progress-bar bg-dark text-right font-weight-bold pr-3" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">30%</div>
                                 </div>
