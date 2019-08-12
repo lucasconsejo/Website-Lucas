@@ -96,13 +96,7 @@ class MissionEffectuees extends Component{
                             <h3>V. Migration Mésos/Marathon à Kubernetes</h3>
 
                             <p>
-                                L'application est un microservice Java 8 utilisant le framework Spring boot. Il est actuellement placé dans un docker qui est controllé depuis Mésos/Marathon (Orchestrateur).
-                                <br />Ce microservice récupère des données de différents produits et différentes offres, depuis 3 files Kafka. Il va ensuite traiter ces données (au format JSON) pour envoyer ça à
-                                Solr et MongoDB.
-                                <br />
-                                <br />Dans mon équipe, je suis le seul à faire du Java, ils font principalement tous du .NET core (C#). Je suis donc le premier de mon service à faire une migration Java / Kubernetes.
-                                <br />Pour m'orienter dans cette mission, je dispose de documentation sur Confluence, de d'autres services qui ont déjà fait une migration Java / Kubernetes. Je dois donc en parallèle, 
-                                écrire une documentation pour mon service, en décrivant le déroulement de ma migration Java / Kubernetes, pour que les prochaines personnes de mon équipe à devoir faire ça, sauront par où commencer et quoi faire.
+                                
                             </p>
                         </div>
                     </div>

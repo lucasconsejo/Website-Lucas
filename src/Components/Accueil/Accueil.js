@@ -27,7 +27,7 @@ class Accueil extends Component{
                                 <div id="description" className="col-12  col-sm-12  col-md-8  col-lg-7  col-xl-6  offset-md-1  offset-lg-2">
                                     <h1>Lucas Consejo</h1>
                                     <h2>Développeur Web & Android</h2><br/>
-                                    <p className="text-light">Je suis étudiant en 2ème année en Informatique à Ingésup, sur le campus Ynov à Bordeaux.
+                                    <p className="text-light">Je suis étudiant en 3ème année en Informatique à Ingésup, sur le campus Ynov à Bordeaux.
                                     Je suis passionné par l'informatique. Je suis curieux, motivé et je cherche constamment à approfondir mes compétences.</p>
                                 </div>             
                             </div>
