@@ -199,7 +199,7 @@ class MissionEffectuees extends Component{
                                 J'ai même suivi une formation de 2h30 dans les locaux de Cdiscount, sur le fonctionnement de <span id="color-detail">Kubernetes</span>. C'était très intéressant !
                                 <br/>
                                 <br/>
-                                Au final, j'ai passé environ 1 mois et 1 semaine afin de réaliser cette mission &#128526;
+                                <b>Au final, j'ai passé environ 1 mois et 1 semaine afin de réaliser cette mission</b> &#128526;
                             </p>
                         </div>
                     </div>
