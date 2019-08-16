@@ -27,7 +27,7 @@ class AccueilEntreprise extends Component{
                             </p>
                         </div>
 
-                        <div id="blog-part-1">
+                        <div class="blog-part">
                             <h3>I. Le premier jour</h3>
 
                             <p>
@@ -59,7 +59,7 @@ class AccueilEntreprise extends Component{
                             </p>
                         </div>
 
-                        <div id="blog-part-2">
+                        <div class="blog-part">
                             <h3>II. Présentation de ma première mission</h3>
 
                             <p>
@@ -72,13 +72,13 @@ class AccueilEntreprise extends Component{
                             </p>
                         </div>
 
-                        <div id="blog-part-3">
+                        <div class="blog-part">
                             <h3>III. Présentation du service / de l'équipe</h3>
 
                             <span id="color-detail"><i>[A compléter...]</i></span>
                         </div>
 
-                        <div id="blog-part-4">
+                        <div class="blog-part">
                             <h3>IV. Intégration dans l'équipe</h3>
                             <br />
                             <ul>
@@ -115,7 +115,7 @@ class AccueilEntreprise extends Component{
                             </ul>
                         </div>
 
-                        <div id="blog-part-5">
+                        <div class="blog-conclusion">
                             <h3><i>Bonus : Unboxing de la boîte de bienvenue</i></h3>
 
                             Si vous lisez ici, c'est que vous êtes curieux et avez grandement envie de savoir ce que contient cette fameuse boîte de bienvenue... &#128527;

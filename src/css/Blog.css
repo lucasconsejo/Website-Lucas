@@ -122,14 +122,14 @@ body{
     margin-top: 20px;
   }
   
-  #blog-part-1, #blog-part-2, #blog-part-3, #blog-part-4, #blog-part-5{
+  .blog-part{
     margin-top: 25px;
   }
-  #blog-part-1 p, #blog-part-2 p, #blog-part-3 p, #blog-part-4 p, #blog-part-5 p{
+  .blog-part p{
     margin-top: 15px;
   }
-  
-  #blog-part-5{
+  .blog-conclusion{
+    margin-top: 25px;
     margin-bottom: 50px;
   }
   
