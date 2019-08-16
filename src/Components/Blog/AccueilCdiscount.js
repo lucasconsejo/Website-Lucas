@@ -78,7 +78,7 @@ class AccueilCdiscount extends Component{
                                             <div id="blog-stage-txt-list">
                                                 <h5>La première mission - l'aspect technique</h5>
                                                 <p className="lien-p">Publié : <span className="date">12 juillet 2019</span></p>
-                                                <p className="lien-p lien-p-last">Dernière modification : <span className="date">1 Août 2019</span></p>
+                                                <p className="lien-p lien-p-last">Dernière modification : <span className="date">16 Août 2019</span></p>
                                             </div>
                                         </div>
                                     </Link>
