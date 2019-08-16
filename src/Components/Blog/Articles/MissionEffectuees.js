@@ -87,8 +87,29 @@ class MissionEffectuees extends Component{
                             <p>
                                C'est parti pour commencer la mission ! Pour cela, je dois me documenter pour savoir par où commencer. Comme dis précédemment, j'ai dû aller chercher les infos sur Confluence, sur la documentation de d'autres équipes.
                                <br />
+                               <br/>
                                Voici les étapes :
+                               <br/>
+                               <br/>
+                                <ul>
+                                    <li>Changer le JDK pour passer à Java 10.</li>
+                                    <li>Changer les dépendences selon le besoin dans le pom.xml (Fichier de dépendences de Maven).</li>
+                                    <li>Impact sur le code (Il faut réécrire certaines parti du code car il ne convient plus avec Java 10).</li>
+                                    <li>Faire des Test Unitaires (TU) pour atteindre au moins 85% de taux de couverture.</li>
+                                </ul>
                                
+                                Ce qui m'a pris beaucoup de temps, c'était l'impact sur le code. A chaque fois, que je modifiais une partie, une nouvelle erreur apparaissait à cause d'une autre parti, qui fallait donc modifier ensuite.
+                                Dans ces cas là, mon plus grand secours était le site Stackoverflow :) Nombreuses de mes erreurs ont déjà été corrigé sur ce site par des développeurs  qui sont tombés sur les mêmes erreurs que moi :)
+                                <br />
+                                Mais j'ai eu aussi droit à l'aide de Géry Deloge (Référent Java), qui est venu m'aider quand il était disponible afin de traiter ces problèmes :)
+                                <br />
+                                <br />
+                                Au niveau des TU, j'ai réussi à atteindre 87.6% de taux de couverture.
+                                <br />
+                                <br />
+                                Après 3 semaines (soit après 1 mois depuis mon arrivée), ce microservice a enfin été migrer de Java 8 à Java 10 :)
+                                <br />
+                                Place maintenant à la migration vers Kubernetes :)
                             </p>
                         </div>
 
@@ -96,7 +117,87 @@ class MissionEffectuees extends Component{
                             <h3>V. Migration Mésos/Marathon à Kubernetes</h3>
 
                             <p>
+                                Me voilà donc parti pour la migration de Mésos/Marathon vers Kubernetes :)
+                                Même principe que pour la migration Java 10, il faut d'abord que je me documente sur Confluence pour savoir par où commencer, sans oublier de compléter la doc que j'écris en parallèle.
+                                <br />
+                                <br/>
+                                Voici les étapes :
+                                <br/>
+                                <br/>
+                                <ol>
+                                    <li>Créer un nouveau repository sur tfs pour la config kube de ce microservice, sous le nom : middle-search-loader-offer-config_kube</li>
+                                    <li>Compléter ce repos avec des fichiers de config et de déploiement vers kube, pour chaque environement (dev, recette, préprod, prod-bordeaux, prod-paris)</li>
+                                    <li>Créer un namespace kube</li>
+                                    <li>Créer une pipeline de build pour déployer ce microservice dans le namespace kube</li>
+                                    <li>Arrêter le microservice sur Mésos/Marathon</li>
+                                    <li>Vérifier que le microservice fonctionne bien sur Kube</li>
+                                </ol>
                                 
+                            </p>
+
+                            <h5>1. Créer un nouveau repository sur tfs</h5>
+                            <p>
+                                Pour cela, il faut faire un ticket à un autre service (Software Factory). Ce sont eux qui peuvent faire des modifications sur tfs.
+                            </p>
+                            <h5>2. Compléter ce repos</h5>
+                            <p>
+                                Une fois le repo créé, il faut le compléter avec des fichiers de config et de deploiement, pour chaque environement.
+                                <br />
+                                Il y a un exemple sur Confluence. J'ai donc repris ça et je l'ai adapté pour ce microservice.
+                            </p>
+                            <h5>3. Créer un namespace kube</h5>
+                            <p>
+                                Il faut faire un nouveau ticket à un autre service, en précisant le nombre de CPU / RAM nécessaire, le nom du namespace, et demander d'avoir les droits. 
+                                <br />
+                                Pour savoir le nombre de CPU / RAM, je suis allé voir la config de ce microservice sur Mésos/Marathon.
+                                <br />
+                                Il fallait donc 5 CPU / 20 GbRAM.
+                                
+                            </p>
+                            <h5>4. Créer une pipeline de build</h5>
+                            <p>
+                                Il faut faire un nouveau ticket à Software Factory, pour qu'il puisse créer une pipeline de build sur tfs, c'est à dire, fusionner 2 repos (le repo code et le repo de config Kube)
+                                pour pouvoir build le microservice et pouvoir déployer dans les différents environements.                                
+                            </p>
+                            <h5>5. Arrêter le microservice sur Mésos/Marathon</h5>
+                            <p>
+                               Une fois que le microservice a correctement été déployé sur Kubernetes, il faut arrêter ce microservice sur Mésos/Marathon (un clic et c'est réglé :)).                               
+                            </p>
+                            <h5>6. Vérifier que le microservice fonctionne bien sur Kube</h5>
+                            <p>
+                               Il faut vérifier dans les logs sur kubes que le microservice récupere bien des données depuis les différentes files Kafka, qu'il indexe bien des produits et des offres dans le moteur Solr et dans la base de données MongoDB.                       
+                            </p>
+                        </div>
+
+                        <div id="blog-conclusion">
+                            <h3>VI. Conclusion</h3>
+
+                            <p>
+                                Avec cette mission, j'ai appris beaucoup de choses notamment sur le développement d'un microservice Java avec le framework Spring.
+                                <br/>
+                                J'ai trouvé ce sujet très intéressant, malgré les nombreux problèmes que j'ai rencontré. Au bizarre que ça puisse paraître, j'ai bien aimé
+                                corriger ces erreurs. 
+                                <br/>
+                                <br/>
+                                Pourquoi ? Parce que j'aime me faire du mal ? 
+                                <br/>
+                                <br/>
+                                Non. Parce que ça demande beaucoup de réfléxion, qu'il faut vraiment bien analyser et comprendre chaque erreur avant de pouvoir les traiter une par une.
+                                <br/>
+                                J'ai dû aussi soliciter mes connaissances afin de pouvoir adapter le code et éviter certains problèmes.
+                                <br/>
+                                J'étais également le seul de mon service à faire du Java. Cela demandait donc plus de réflexion.
+                                <br/>
+                                <br/>
+                                Mais ce qui me motivait le plus, c'était que ce sujet est important dans le service où je suis. Ça me motivait pour ne pas lâcher les erreurs et a tous faire pour me débloquer. 
+                                <br/>
+                                <br/>
+                                J'ai aussi appris beaucoup de chose au sujet d'Orchestrateur avec Mésos/Marathon et Kubernetes.
+                                <br/>
+                                J'ai même suivi une formation de 2h30 dans les locaux de Cdiscount, sur le fonctionnement de Kubernetes. C'était très intéressant !
+                                <br/>
+                                <br/>
+                                Au final, j'ai passé environ 1 mois et 1 semaine afin de réaliser cette mission :)
                             </p>
                         </div>
                     </div>
