@@ -84,6 +84,34 @@ class AccueilCdiscount extends Component{
                                     </Link>
                                 </li>
                                 <li>
+                                    <Link to="/blog/stage/cdiscount/article/deuxieme-mission-l-aspect-technique" className="lien">
+                                        <div id="bloc-stage-list">
+                                            <div id="blog-stage-img-list">
+                                                <img src={imgMission} alt="img mission" />
+                                            </div>
+                                            <div id="blog-stage-txt-list">
+                                                <h5>Deuxième mission - l'aspect technique</h5>
+                                                <p className="lien-p">Publié : <span className="date">16 août 2019</span></p>
+                                                <p className="lien-p lien-p-last">Dernière modification : <span className="date">16 août 2019</span></p>
+                                            </div>
+                                        </div>
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link to="/blog/stage/cdiscount/article/troisieme-et-derniere-mission-l-aspect-technique" className="lien">
+                                        <div id="bloc-stage-list">
+                                            <div id="blog-stage-img-list">
+                                                <img src={imgMission} alt="img mission" />
+                                            </div>
+                                            <div id="blog-stage-txt-list">
+                                                <h5>Troisième et dernière mission - l'aspect technique</h5>
+                                                <p className="lien-p">Publié : <span className="date">19 août 2019</span></p>
+                                                <p className="lien-p lien-p-last">Dernière modification : <span className="date">19 août 2019</span></p>
+                                            </div>
+                                        </div>
+                                    </Link>
+                                </li>
+                                <li>
                                     <Link to="/blog/stage/cdiscount/article/connaissances-mobilisees" className="lien">
                                         <div id="bloc-stage-list">
                                             <div id="blog-stage-img-list">

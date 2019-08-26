@@ -141,6 +141,10 @@ body{
     width: 45px;
     margin-left: 10px;
   }
+
+  .blog-img-size{
+    width: 100%;
+  }
   
   #copyright p{
     line-height: 40px;

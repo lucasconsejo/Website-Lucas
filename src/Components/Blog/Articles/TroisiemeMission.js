@@ -2,9 +2,8 @@ import React, {Component} from 'react';
 import { Link } from 'react-router-dom'
 import Navbar from '../../NavbarBlog/NavbarBlog'
 import Footer from '../../Footer/FooterBlog'
-import SchemaImg from '../../../img/Blog/moteur-esus.PNG'
 
-class MissionEffectuees extends Component{
+class TroisiemeMission extends Component{
 
     componentDidMount() {
         window.scrollTo(0, 0)
@@ -22,7 +21,7 @@ class MissionEffectuees extends Component{
                     <div className="container">
                         <div id="blog-intro">
                             <p className="previous-page"><Link to="/blog" className="previous-page">Accueil</Link> > <Link to="/blog/stage/cdiscount" className="previous-page">Stage Cdiscount</Link> > <Link to="/blog/stage/cdiscount/article/la-première-mission-l-aspect-technique" className="previous-page">Article Mission effectuées - l'aspect technique</Link></p>
-                            <h2>La première mission - l'aspect technique</h2>
+                            <h2>Troisième et dernière mission - l'aspect technique</h2>
                         </div>
 
                         <div class="blog-part">
@@ -38,18 +37,10 @@ class MissionEffectuees extends Component{
                                 L'application est un microservice <span id="color-detail">Java 8</span> utilisant le framework <span id="color-detail">Spring boot</span>. Il est actuellement placé dans un <span id="color-detail">docker</span> qui est controllé depuis <span id="color-detail">Mésos</span>/<span id="color-detail">Marathon</span> (Orchestrateur).
                                 <br />Ce microservice récupère des données de différents produits et différentes offres, depuis 3 files <span id="color-detail">Kafka</span>. Il va ensuite traiter ces données (au format <span id="color-detail">JSON</span>) pour envoyer ça à <span id="color-detail">Solr</span> et <span id="color-detail">MongoDB</span>. &#x1F44D;
                                 <br />
-                              </p>
-
-                            <div>
-                                <a href={SchemaImg} target="_blank"><img className="blog-img-size"src={SchemaImg} /></a>
-                            </div>
-
-                            <p>
-                                Dans mon équipe, je suis le seul à faire du <span id="color-detail">Java</span> &#128550;, ils font principalement tous du <span id="color-detail">.NET core</span> (<span id="color-detail">C#</span>). Je suis donc le premier de mon service à faire une migration <span id="color-detail">Java</span> / <span id="color-detail">Kubernetes</span>.
+                                <br />Dans mon équipe, je suis le seul à faire du <span id="color-detail">Java</span> &#128550;, ils font principalement tous du <span id="color-detail">.NET core</span> (<span id="color-detail">C#</span>). Je suis donc le premier de mon service à faire une migration <span id="color-detail">Java</span> / <span id="color-detail">Kubernetes</span>.
                                 <br />Pour m'orienter dans cette mission, je dispose de documentation sur <a href="https://www.atlassian.com/fr/software/confluence" target="_blank" className="previous-page">Confluence</a>, de d'autres services qui ont déjà fait une migration <span id="color-detail">Java</span> / <span id="color-detail">Kubernetes</span>. Je dois donc en parallèle, 
                                 écrire une documentation pour mon service, en décrivant le déroulement de ma migration <span id="color-detail">Java</span> / <span id="color-detail">Kubernetes</span>, pour que les prochaines personnes de mon équipe à devoir faire ça, sauront par où commencer et quoi faire. &#128523;
                             </p>
-
                         </div>
 
                         <div class="blog-part">
@@ -220,4 +211,4 @@ class MissionEffectuees extends Component{
     }
 }
 
-export default MissionEffectuees
+export default TroisiemeMission
