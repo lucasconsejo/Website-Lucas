@@ -64,6 +64,16 @@ body{
     background-size: cover;
     height: 400px;
   }
+  #img-fond-deuxieme-mission{
+    background-image: url(../img/Blog/deuxieme-mission.jpg);
+    background-size: cover;
+    height: 400px;
+  }
+  #img-fond-troisieme-mission{
+    background-image: url(../img/Blog/troisieme-mission.jpg);
+    background-size: cover;
+    height: 400px;
+  }
   #img-fond-connaissance-mobilisees{
     background-image: url(../img/Blog/connaissance.jpg);
     background-size: cover;

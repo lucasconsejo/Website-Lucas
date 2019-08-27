@@ -15,13 +15,13 @@ class DeuxiemeMission extends Component{
             <div>
                 <Navbar />
                 <div id="container-blog-cdiscount">
-                    <div id="img-fond-mission-effectuees">
+                    <div id="img-fond-deuxieme-mission">
                         
                     </div>
                 
                     <div className="container">
                         <div id="blog-intro">
-                            <p className="previous-page"><Link to="/blog" className="previous-page">Accueil</Link> > <Link to="/blog/stage/cdiscount" className="previous-page">Stage Cdiscount</Link> > <Link to="/blog/stage/cdiscount/article/la-première-mission-l-aspect-technique" className="previous-page">Article Mission effectuées - l'aspect technique</Link></p>
+                            <p className="previous-page"><Link to="/blog" className="previous-page">Accueil</Link> > <Link to="/blog/stage/cdiscount" className="previous-page">Stage Cdiscount</Link> > <Link to="/blog/stage/cdiscount/article/deuxieme-mission-l-aspect-technique" className="previous-page">Article Mission effectuées - l'aspect technique</Link></p>
                             <h2>Deuxième mission - l'aspect technique</h2>
                         </div>
 
@@ -29,14 +29,14 @@ class DeuxiemeMission extends Component{
                             <h3>I. Le besoin</h3>
 
                             <p>Sur les 3 microservice <span id="color-detail">export-configuration</span> / <span id="color-detail">offer-export-publication</span> / <span id="color-detail">product-export-publication</span>, je vais devoir les migrer de <span id="color-detail">Java 8</span> vers <span id="color-detail">Java 10</span>, puis de <span id="color-detail">Mésos</span>/<span id="color-detail">Marathon</span> vers <span id="color-detail">Kubernetes</span>.<br />
-                            Une nouvelle migration donc. Mais ça va être plus simple puisque j'ai déjà fais ça pour la mission précédente ;) Je sais quoi faire et par où commencer.</p>
+                            Une nouvelle migration donc. Mais ça va être plus simple puisque j'ai déjà fais ça pour la mission précédente, je sais quoi faire et par où commencer. &#128521;</p>
                         </div>
 
                         <div class="blog-part">
                             <h3>II. Contexte / Fonctionnement actuel</h3>
 
                             <p>
-                                Ces application sont des microservices <span id="color-detail">Java 8</span> utilisant le framework <span id="color-detail">Spring boot</span>. Ils sont actuellement placés dans des <span id="color-detail">docker</span> qui sont controllés depuis <span id="color-detail">Mésos</span>/<span id="color-detail">Marathon</span> (Orchestrateur).
+                                Ces application sont des microservices Java 8 utilisant le framework <span id="color-detail">Spring boot</span>. Ils sont actuellement placés dans des <span id="color-detail">docker</span> qui sont controllés depuis Mésos/Marathon (Orchestrateur).
                                 <br />Le but de ces microservices, est d'exporter des produits ou des offres en fichier CSV et de l'envoyer en FTP à CEPH (c'est un server cloud).
                                 <br /><br />
                                <ul>
@@ -80,7 +80,7 @@ class DeuxiemeMission extends Component{
                                     <li>
                                         <h5>Le retour du problème <span id="color-detail">MongoDB</span></h5>
                                         <p>
-                                            Vous souvenez-vous que j'ai dû enlever le MongoDB lors de la mission précédente ?
+                                            Vous souvenez-vous que j'ai dû enlever le MongoDB lors de la mission précédente ? &#128565;
                                             <br/>
                                             <br/>
                                             Je pense que vous vous en doutez, mais après avoir analysé les 3 microservices, j'ai vu qu'offer-export-publication et product-export-publication utilisaient le même MongoDB que j'ai enlevé pour middle-search-loader-offer.
@@ -88,17 +88,17 @@ class DeuxiemeMission extends Component{
                                             J'ai donc dû rajouter de nouveau, tous les fichiers qui comporter MongoDB et j'ai dû les adapter afin de le faire fonctionner cette fois-ci.
                                             <br/>
                                             <br/>
-                                            <i>Heurement que git est là ! J'ai pû récupérer tous les fichiers que j'avais retiré en retournant sur les commits précedents.</i>
+                                            <i>Heurement que git est là ! J'ai pû récupérer tous les fichiers que j'avais retiré en retournant sur les commits précedents.</i> &#128554;
                                         </p>
                                     </li>
 
                                     <li>
                                         <h5>Problème <span id="color-detail">Mésos/Marathon</span></h5>
                                         <p>
-                                            Voilà un problème assez embêttant. Je suis allé voir les logs sur Mésos/Marathon, de chacun de ces microservices. Et sur tout les environements (dev, recette, préprod et même les prod), ils n'y en a aucun qui fonctionnement correctement :/
+                                            Voilà un problème assez embêttant. Je suis allé voir les logs sur Mésos/Marathon, de chacun de ces microservices. Et sur tout les environements (dev, recette, préprod et même les prod), ils n'y en a aucun qui fonctionnement correctement.
                                             <br />
                                             <br />
-                                            J'ai alerté Isabelle Cardoso et elle m'a répondu une réponse assez cruelle. 
+                                            J'ai alerté <span id="color-detail">Isabelle Cardoso</span> et elle m'a répondu une réponse assez cruelle. &#128546; 
                                             <br />
                                             "Essaie de corriger ce que tu peux mais sinon, malheureusement, notre mission est de juste migrer ces microservices."
                                             <br />
@@ -113,7 +113,7 @@ class DeuxiemeMission extends Component{
                             <h3>IV. Migration Java 8 à 10</h3>
 
                             <p>
-                                Bien ! Me voilà de nouveau parti pour faire une migration Java 8 à Java 10, mais pour 3 microservices.
+                                Bien ! Me voilà de nouveau parti pour faire une migration Java 8 à Java 10, mais pour 3 microservices. &#128527;
                                <br />
                                <br/>
                                Pour rappel, voici les étapes :
@@ -131,7 +131,7 @@ class DeuxiemeMission extends Component{
                                <br />  
                                <br />
                                Pour offer-export-publication et product-export-publication, il y avait un soucis lors de la génération du fichier CSV. Ce fichier est stocké en local avant d'être envoyé à CEPH. Mais imaginons que ce fichier fasse 20GB ! Il va prendre tout l'espace de stockage sur Kubernetes.
-                               Après en avoir parler à un Devops et à Isabelle, ils en ont conclus que ces microservices ne seront pas migrer vers Kubernetes, mais plutôt sur un VM (Virtual Machine). 
+                               Après en avoir parler à un <span id="color-detail">Devops</span> et à <span id="color-detail">Isabelle</span>, ils en ont conclus que ces microservices ne seront pas migrer vers Kubernetes, mais plutôt sur une VM (Virtual Machine). 
                             </p>
                         </div>
 
@@ -146,7 +146,7 @@ class DeuxiemeMission extends Component{
                                 J'ai aussi continué à monter en compétences en Java mais aussi à mieux corriger des erreurs et à éviter celle que j'avais déjà eu lors de la mission précédente.
                                 <br/>
                                 <br/>
-                                <b>Au final, j'ai passé environ 3 semaines afin de réaliser cette mission</b> &#128526;
+                                <b>Au final, j'ai passé environ 1 mois afin de réaliser cette mission</b> &#128522;
                             </p>
                         </div>
                     </div>

@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom'
 import Navbar from '../NavbarBlog/NavbarBlog'
 import imgWelcome from "../../img/Blog/welcome.jpg"
 import imgMission from "../../img/Blog/mission.jpg"
+import imgMission2 from "../../img/Blog/deuxieme-mission.jpg"
+import imgMission3 from "../../img/Blog/troisieme-mission.jpg"
 import imgCompetence from "../../img/Blog/competence.jpg"
 import imgConnaissance from "../../img/Blog/connaissance.jpg"
 import imgDifficulte from "../../img/Blog/difficulte.jpg"
@@ -87,7 +89,7 @@ class AccueilCdiscount extends Component{
                                     <Link to="/blog/stage/cdiscount/article/deuxieme-mission-l-aspect-technique" className="lien">
                                         <div id="bloc-stage-list">
                                             <div id="blog-stage-img-list">
-                                                <img src={imgMission} alt="img mission" />
+                                                <img src={imgMission2} alt="img mission" />
                                             </div>
                                             <div id="blog-stage-txt-list">
                                                 <h5>Deuxième mission - l'aspect technique</h5>
@@ -101,7 +103,7 @@ class AccueilCdiscount extends Component{
                                     <Link to="/blog/stage/cdiscount/article/troisieme-et-derniere-mission-l-aspect-technique" className="lien">
                                         <div id="bloc-stage-list">
                                             <div id="blog-stage-img-list">
-                                                <img src={imgMission} alt="img mission" />
+                                                <img src={imgMission3} alt="img mission" />
                                             </div>
                                             <div id="blog-stage-txt-list">
                                                 <h5>Troisième et dernière mission - l'aspect technique</h5>
