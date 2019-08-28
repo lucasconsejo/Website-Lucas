@@ -41,7 +41,7 @@ class App extends Component {
             <Route path="/blog/stage/cdiscount/article/accueil-integration-dans-l-entreprise" component={AccueilEntreprise} />
             <Route path="/blog/stage/cdiscount/article/la-première-mission-l-aspect-technique" component={MissionEffectuees} />
             <Route path="/blog/stage/cdiscount/article/deuxieme-mission-l-aspect-technique" component={DeuxiemeMission} />
-            <Route path="/blog/stage/cdiscount/article/troisieme-et-derniere-mission-l-aspect-technique" component={TroisiemeMission} />
+            <Route path="/blog/stage/cdiscount/article/troisieme-mission-l-aspect-technique" component={TroisiemeMission} />
             <Route path="/blog/stage/cdiscount/article/competences-acquises" component={CompetencesAcquises} />
             <Route path="/blog/stage/cdiscount/article/difficultes-rencontrees-et-les-solutions-apportees" component={DifficultésRencontrees} />
             <Route path="/blog/stage/cdiscount/article/connaissances-mobilisees" component={ConnaissanceMobilisées} />

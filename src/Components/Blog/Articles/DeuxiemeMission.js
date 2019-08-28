@@ -21,7 +21,7 @@ class DeuxiemeMission extends Component{
                 
                     <div className="container">
                         <div id="blog-intro">
-                            <p className="previous-page"><Link to="/blog" className="previous-page">Accueil</Link> > <Link to="/blog/stage/cdiscount" className="previous-page">Stage Cdiscount</Link> > <Link to="/blog/stage/cdiscount/article/deuxieme-mission-l-aspect-technique" className="previous-page">Article Mission effectuées - l'aspect technique</Link></p>
+                            <p className="previous-page"><Link to="/blog" className="previous-page">Accueil</Link> > <Link to="/blog/stage/cdiscount" className="previous-page">Stage Cdiscount</Link> > <Link to="/blog/stage/cdiscount/article/deuxieme-mission-l-aspect-technique" className="previous-page">Article Deuxieme mission - l'aspect technique</Link></p>
                             <h2>Deuxième mission - l'aspect technique</h2>
                         </div>
 
