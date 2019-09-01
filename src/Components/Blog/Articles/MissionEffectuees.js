@@ -25,13 +25,13 @@ class MissionEffectuees extends Component{
                             <h2>La première mission - l'aspect technique</h2>
                         </div>
 
-                        <div class="blog-part">
+                        <div className="blog-part">
                             <h3>I. Le besoin</h3>
 
                             <p>Sur le microservice <span id="color-detail">middle-search-loader-offer</span>, je vais devoir le migrer de <span id="color-detail">Java 8</span> vers <span id="color-detail">Java 10</span>, puis de <span id="color-detail">Mésos</span>/<span id="color-detail">Marathon</span> vers <span id="color-detail">Kubernetes</span>.</p>
                         </div>
 
-                        <div class="blog-part">
+                        <div className="blog-part">
                             <h3>II. Contexte / Fonctionnement actuel</h3>
 
                             <p>
@@ -40,19 +40,17 @@ class MissionEffectuees extends Component{
                                 <br />
                               </p>
 
-                            <div>
-                                <a href={SchemaImg} target="_blank"><img className="blog-img-size"src={SchemaImg} /></a>
-                            </div>
+                            <a href={SchemaImg} target="_blank" rel="noopener noreferrer"><img className="blog-img-size"src={SchemaImg} alt="schema"/></a>
 
                             <p>
                                 Dans mon équipe, je suis le seul à faire du <span id="color-detail">Java</span> &#128550;, ils font principalement tous du <span id="color-detail">.NET core</span> (<span id="color-detail">C#</span>). Je suis donc le premier de mon service à faire une migration <span id="color-detail">Java</span> / <span id="color-detail">Kubernetes</span>.
-                                <br />Pour m'orienter dans cette mission, je dispose de documentation sur <a href="https://www.atlassian.com/fr/software/confluence" target="_blank" className="previous-page">Confluence</a>, de d'autres services qui ont déjà fait une migration <span id="color-detail">Java</span> / <span id="color-detail">Kubernetes</span>. Je dois donc en parallèle, 
+                                <br />Pour m'orienter dans cette mission, je dispose de documentation sur <a href="https://www.atlassian.com/fr/software/confluence" target="_blank" rel="noopener noreferrer" className="previous-page">Confluence</a>, de d'autres services qui ont déjà fait une migration <span id="color-detail">Java</span> / <span id="color-detail">Kubernetes</span>. Je dois donc en parallèle, 
                                 écrire une documentation pour mon service, en décrivant le déroulement de ma migration <span id="color-detail">Java</span> / <span id="color-detail">Kubernetes</span>, pour que les prochaines personnes de mon équipe à devoir faire ça, sauront par où commencer et quoi faire. &#128523;
                             </p>
 
                         </div>
 
-                        <div class="blog-part">
+                        <div className="blog-part">
                             <h3>III. Avant de commencer</h3>
                             <br />
                                 <ul>
@@ -92,25 +90,24 @@ class MissionEffectuees extends Component{
                                 </ul>
                         </div>
 
-                        <div class="blog-part">
+                        <div className="blog-part">
                             <h3>IV. Migration Java 8 à 10</h3>
 
                             <p>
-                               C'est parti pour commencer la mission ! Pour cela, je dois me documenter pour savoir par où commencer. Comme dis précédemment, j'ai dû aller chercher les infos sur <a href="https://www.atlassian.com/fr/software/confluence" target="_blank" className="previous-page">Confluence</a>, sur la documentation de d'autres équipes.
+                               C'est parti pour commencer la mission ! Pour cela, je dois me documenter pour savoir par où commencer. Comme dis précédemment, j'ai dû aller chercher les infos sur <a href="https://www.atlassian.com/fr/software/confluence" target="_blank" rel="noopener noreferrer" className="previous-page">Confluence</a>, sur la documentation de d'autres équipes.
                                <br />
                                <br/>
                                Voici les étapes :
-                               <br/>
-                               <br/>
-                                <ul>
-                                    <li>Changer le JDK pour passer à Java 10.</li>
-                                    <li>Changer les dépendences selon le besoin dans le pom.xml (Fichier de dépendences de Maven).</li>
-                                    <li>Impact sur le code (Il faut réécrire certaines parti du code car il ne convient plus avec Java 10).</li>
-                                    <li>Faire des Test Unitaires (TU) pour atteindre au moins 80% de taux de couverture.</li>
-                                </ul>
-                               
+                            </p>
+                            <ul>
+                                <li>Changer le JDK pour passer à Java 10.</li>
+                                <li>Changer les dépendences selon le besoin dans le pom.xml (Fichier de dépendences de Maven).</li>
+                                <li>Impact sur le code (Il faut réécrire certaines parti du code car il ne convient plus avec Java 10).</li>
+                                <li>Faire des Test Unitaires (TU) pour atteindre au moins 80% de taux de couverture.</li>
+                            </ul>
+                            <p>
                                 Ce qui m'a pris beaucoup de temps, c'était l'impact sur le code. A chaque fois, que je modifiais une partie, une nouvelle erreur apparaissait à cause d'une autre parti, qui fallait donc modifier ensuite.
-                                Dans ces cas là, mon plus grand secours était le site <a href="https://stackoverflow.com/" target="_blank" className="previous-page">Stackoverflow</a> &#128524; Nombreuses de mes erreurs ont déjà été corrigé sur ce site par des développeurs  qui sont tombés sur les mêmes erreurs que moi.
+                                Dans ces cas là, mon plus grand secours était le site <a href="https://stackoverflow.com/" target="_blank" rel="noopener noreferrer" className="previous-page">Stackoverflow</a> &#128524; Nombreuses de mes erreurs ont déjà été corrigé sur ce site par des développeurs  qui sont tombés sur les mêmes erreurs que moi.
                                 <br />
                                 Mais j'ai eu aussi droit à l'aide de <span id="color-detail">Géry Deloge</span> (Référent <span id="color-detail">Java</span>), qui est venu m'aider quand il était disponible afin de traiter ces problèmes &#128522;
                                 <br />
@@ -124,37 +121,34 @@ class MissionEffectuees extends Component{
                             </p>
                         </div>
 
-                        <div class="blog-part">
+                        <div className="blog-part">
                             <h3>V. Migration Mésos/Marathon à Kubernetes</h3>
 
                             <p>
                                 Me voilà donc parti pour la migration de <span id="color-detail">Mésos</span>/<span id="color-detail">Marathon</span> vers <span id="color-detail">Kubernetes</span> &#128526;
-                                Même principe que pour la migration <span id="color-detail">Java 10</span>, il faut d'abord que je me documente sur <a href="https://www.atlassian.com/fr/software/confluence" target="_blank" className="previous-page">Confluence</a> pour savoir par où commencer, sans oublier de compléter la doc que j'écris en parallèle.
+                                Même principe que pour la migration <span id="color-detail">Java 10</span>, il faut d'abord que je me documente sur <a href="https://www.atlassian.com/fr/software/confluence" target="_blank" rel="noopener noreferrer" className="previous-page">Confluence</a> pour savoir par où commencer, sans oublier de compléter la doc que j'écris en parallèle.
                                 <br />
                                 <br/>
                                 Voici les étapes :
-                                <br/>
-                                <br/>
-                                <ol>
-                                    <li>Créer un nouveau repository sur <a href="https://visualstudio.microsoft.com/fr/tfs/" target="_blank" className="previous-page">TFS</a> pour la config kube de ce microservice, sous le nom : middle-search-loader-offer-config_kube</li>
-                                    <li>Compléter ce repos avec des fichiers de config et de déploiement vers kube, pour chaque environement (dev, recette, préprod, prod-bordeaux, prod-paris)</li>
-                                    <li>Créer un namespace kube</li>
-                                    <li>Créer une pipeline de build pour déployer ce microservice dans le namespace kube</li>
-                                    <li>Arrêter le microservice sur Mésos/Marathon</li>
-                                    <li>Vérifier que le microservice fonctionne bien sur Kubernetes</li>
-                                </ol>
-                                
                             </p>
+                            <ol>
+                                <li>Créer un nouveau repository sur <a href="https://visualstudio.microsoft.com/fr/tfs/" target="_blank" rel="noopener noreferrer" className="previous-page">TFS</a> pour la config kube de ce microservice, sous le nom : middle-search-loader-offer-config_kube</li>
+                                <li>Compléter ce repos avec des fichiers de config et de déploiement vers kube, pour chaque environement (dev, recette, préprod, prod-bordeaux, prod-paris)</li>
+                                <li>Créer un namespace kube</li>
+                                <li>Créer une pipeline de build pour déployer ce microservice dans le namespace kube</li>
+                                <li>Arrêter le microservice sur Mésos/Marathon</li>
+                                <li>Vérifier que le microservice fonctionne bien sur Kubernetes</li>
+                            </ol>
 
                             <h4>1. Créer un nouveau repository sur TFS</h4>
                             <p>
-                                Pour cela, il faut faire un ticket à un autre service (<span id="color-detail">Software Factory</span>). Ce sont eux qui peuvent faire des modifications sur <a href="https://visualstudio.microsoft.com/fr/tfs/" target="_blank" className="previous-page">TFS</a>.
+                                Pour cela, il faut faire un ticket à un autre service (<span id="color-detail">Software Factory</span>). Ce sont eux qui peuvent faire des modifications sur <a href="https://visualstudio.microsoft.com/fr/tfs/" target="_blank" rel="noopener noreferrer" className="previous-page">TFS</a>.
                             </p>
                             <h4>2. Compléter ce repos</h4>
                             <p>
                                 Une fois le repo créé, il faut le compléter avec des fichiers de config et de deploiement, pour <span id="color-detail">chaque environement</span>.
                                 <br />
-                                Il y a un exemple sur <a href="https://www.atlassian.com/fr/software/confluence" target="_blank" className="previous-page">Confluence</a>. J'ai donc repris ça et je l'ai adapté pour ce microservice.
+                                Il y a un exemple sur <a href="https://www.atlassian.com/fr/software/confluence" target="_blank" rel="noopener noreferrer" className="previous-page">Confluence</a>. J'ai donc repris ça et je l'ai adapté pour ce microservice.
                             </p>
                             <h4>3. Créer un namespace kube</h4>
                             <p>
@@ -167,7 +161,7 @@ class MissionEffectuees extends Component{
                             </p>
                             <h4>4. Créer une pipeline de build</h4>
                             <p>
-                                Il faut faire un nouveau ticket à <span id="color-detail">Software Factory</span>, pour qu'il puisse créer une pipeline de build sur <a href="https://visualstudio.microsoft.com/fr/tfs/" target="_blank" className="previous-page">TFS</a>, c'est à dire, fusionner 2 repos (le repo code et le repo de config Kube)
+                                Il faut faire un nouveau ticket à <span id="color-detail">Software Factory</span>, pour qu'il puisse créer une pipeline de build sur <a href="https://visualstudio.microsoft.com/fr/tfs/" target="_blank" rel="noopener noreferrer" className="previous-page">TFS</a>, c'est à dire, fusionner 2 repos (le repo code et le repo de config Kube)
                                 pour pouvoir build le microservice et pouvoir déployer dans les différents environements.                                
                             </p>
                             <h4>5. Arrêter le microservice sur Mésos/Marathon</h4>
@@ -180,7 +174,7 @@ class MissionEffectuees extends Component{
                             </p>
                         </div>
 
-                        <div class="blog-conclusion">
+                        <div className="blog-conclusion">
                             <h3>VI. Conclusion</h3>
 
                             <p>

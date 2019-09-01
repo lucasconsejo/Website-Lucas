@@ -25,31 +25,30 @@ class DeuxiemeMission extends Component{
                             <h2>Deuxième mission - l'aspect technique</h2>
                         </div>
 
-                        <div class="blog-part">
+                        <div className="blog-part">
                             <h3>I. Le besoin</h3>
 
                             <p>Sur les 3 microservice <span id="color-detail">export-configuration</span> / <span id="color-detail">offer-export-publication</span> / <span id="color-detail">product-export-publication</span>, je vais devoir les migrer de <span id="color-detail">Java 8</span> vers <span id="color-detail">Java 10</span>, puis de <span id="color-detail">Mésos</span>/<span id="color-detail">Marathon</span> vers <span id="color-detail">Kubernetes</span>.<br />
                             Une nouvelle migration donc. Mais ça va être plus simple puisque j'ai déjà fais ça pour la mission précédente, je sais quoi faire et par où commencer. &#128521;</p>
                         </div>
 
-                        <div class="blog-part">
+                        <div className="blog-part">
                             <h3>II. Contexte / Fonctionnement actuel</h3>
 
                             <p>
                                 Ces application sont des microservices Java 8 utilisant le framework <span id="color-detail">Spring boot</span>. Ils sont actuellement placés dans des <span id="color-detail">docker</span> qui sont controllés depuis Mésos/Marathon (Orchestrateur).
                                 <br />Le but de ces microservices, est d'exporter des produits ou des offres en fichier CSV et de l'envoyer en FTP à CEPH (c'est un server cloud).
-                                <br /><br />
-                               <ul>
-                                   <li><span id="color-detail">Export-configuration</span>: Ce microservice récupère des données de configutation d'offre ou de produit pour les envoyer à 2 files Kafka (Soit à la file pour les offres, soit à la file des produits).</li>
-                                   <br />
-                                   <li><span id="color-detail">Offer-export-publication</span>: Ce microservice récupère des données de configutation d'offre depuis la file Kafka offer. Selon, la config reçu, il va récupérer des données de MongoDB et va en générer un fichier CSV. Ce fichier sera ensuite envoyé en FTP à CEPH.</li>
-                                   <br />
-                                   <li><span id="color-detail">Product-export-publication</span>: Ce microservice fait la même chose qu'<span id="color-detail">offer-export-publication</span> mais traite des produits à la place des offres.</li>
-                               </ul>
                             </p>
+                            <ul>
+                                <li><span id="color-detail">Export-configuration</span>: Ce microservice récupère des données de configutation d'offre ou de produit pour les envoyer à 2 files Kafka (Soit à la file pour les offres, soit à la file des produits).</li>
+                                <br />
+                                <li><span id="color-detail">Offer-export-publication</span>: Ce microservice récupère des données de configutation d'offre depuis la file Kafka offer. Selon, la config reçu, il va récupérer des données de MongoDB et va en générer un fichier CSV. Ce fichier sera ensuite envoyé en FTP à CEPH.</li>
+                                <br />
+                                <li><span id="color-detail">Product-export-publication</span>: Ce microservice fait la même chose qu'<span id="color-detail">offer-export-publication</span> mais traite des produits à la place des offres.</li>
+                            </ul>
                         </div>
 
-                        <div class="blog-part">
+                        <div className="blog-part">
                             <h3>III. Avant de commencer</h3>
                             <br />
                                 <ul>
@@ -73,7 +72,7 @@ class DeuxiemeMission extends Component{
                                         </p>
                                         
                                         <div>
-                                            <a href={SchemaImg} target="_blank"><img className="blog-img-size"src={SchemaImg} /></a>
+                                            <a href={SchemaImg} target="_blank" rel="noopener noreferrer"><img className="blog-img-size"src={SchemaImg} /></a>
                                         </div>
                                     </li>
 
@@ -109,7 +108,7 @@ class DeuxiemeMission extends Component{
                                 </ul>
                         </div>
 
-                        <div class="blog-part">
+                        <div className="blog-part">
                             <h3>IV. Migration Java 8 à 10</h3>
 
                             <p>
@@ -117,15 +116,14 @@ class DeuxiemeMission extends Component{
                                <br />
                                <br/>
                                Pour rappel, voici les étapes :
-                               <br/>
-                               <br/>
-                                <ul>
-                                    <li>Changer le JDK pour passer à Java 10.</li>
-                                    <li>Changer les dépendences selon le besoin dans le pom.xml (Fichier de dépendences de Maven).</li>
-                                    <li>Impact sur le code (Il faut réécrire certaines parti du code car il ne convient plus avec Java 10).</li>
-                                    <li>Faire des Test Unitaires (TU) pour atteindre au moins 80% de taux de couverture.</li>
-                                </ul>
-                               
+                            </p>
+                            <ul>
+                                <li>Changer le JDK pour passer à Java 10.</li>
+                                <li>Changer les dépendences selon le besoin dans le pom.xml (Fichier de dépendences de Maven).</li>
+                                <li>Impact sur le code (Il faut réécrire certaines parti du code car il ne convient plus avec Java 10).</li>
+                                <li>Faire des Test Unitaires (TU) pour atteindre au moins 80% de taux de couverture.</li>
+                            </ul>
+                            <p>
                                J'ai choisi de commencer par export-configuration car c'est celui qui me semblait le plus simple à faire. J'avais tord. J'ai eu un peu de mal à adapter le code parce que je ne savais pas si
                                j'avais changé quelque chose qui ne fallait pas ou si ces erreurs étaient déjà présente avant. Mais rassurez-vous, je m'en suis bien sorti.
                                <br />  
@@ -135,7 +133,7 @@ class DeuxiemeMission extends Component{
                             </p>
                         </div>
 
-                        <div class="blog-conclusion">
+                        <div className="blog-conclusion">
                             <h3>V. Conclusion</h3>
 
                             <p>

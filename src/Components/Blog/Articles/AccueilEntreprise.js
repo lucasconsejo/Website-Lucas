@@ -27,7 +27,7 @@ class AccueilEntreprise extends Component{
                             </p>
                         </div>
 
-                        <div class="blog-part">
+                        <div className="blog-part">
                             <h3>I. Le premier jour</h3>
 
                             <p>
@@ -38,28 +38,31 @@ class AccueilEntreprise extends Component{
                                 Ensuite, j'ai été accueilli par <span id="color-detail">Isabelle Cardoso</span> (<span id="color-detail">Chef de projet</span>) et elle m'a accompagné à mon nouveau bureau des 2 prochains mois. Direction donc un grand open-space nommé "Le cloud", où j'ai rencontré ma nouvelle équipe. &#128578;
                                 <br />
                                 <span id="color-detail">Stéphane Giauque</span> était aussi présent (j'ai eu mon entretien avec lui et c'est le <span id="color-detail">Directeur métiers IT</span>). Il m'a fourni mon ordinateur portable. J'ai ensuite dû installer le matériel à mon bureau, à savoir : 
-                               <ul>
-                                    <li>Connecter mon ordi portable à un dock</li>
-                                    <li>Brancher les 2 écrans supplémentaires</li>
-                                    <li>Brancher le clavier / la souris / le casque audio.</li>
-                                </ul>
+                            </p>
+                            <ul>
+                                <li>Connecter mon ordi portable à un dock</li>
+                                <li>Brancher les 2 écrans supplémentaires</li>
+                                <li>Brancher le clavier / la souris / le casque audio.</li>
+                            </ul>
+                            <p>
                                 Bien, mon poste est installé ! Me voilà donc avec 3 écrans ! Place maintenant à l'installation des logiciels dont j'aurais besoin pour mes futures missions ainsi que récupérer mes identifiants pour les mails et les différents sites/plateformes de Cdiscount en interne.
                                 <br />
                                 <br />
                                 Parmi tous ces outils, les plus importants sont :
-                                <ul>
-                                    <li><a href="https://products.office.com/fr-fr/microsoft-teams/group-chat-software" target="_blank" className="previous-page">Teams</a> / <a href="https://www.skype.com/fr/" target="_blank" className="previous-page">Skype</a> pour communiquer entre chaque personne de l'équipe mais aussi avec d'autres personnes de d'autres services.</li>
-                                    <li><a href="https://outlook.live.com/owa/" target="_blank" className="previous-page">Outlook</a> pour les mails</li>
-                                    <li><a href="https://www.jetbrains.com/idea/" target="_blank" className="previous-page">IntelliJ</a> (dans mon cas) qui est un IDE pour pouvoir programmer en Java.</li>
-                                    <li><a href="https://visualstudio.microsoft.com/fr/tfs/" target="_blank" className="previous-page">TFS</a> qui fait office de server git au sein de Cdiscount.</li>
-                                    <li><a href="https://www.atlassian.com/fr/software/confluence" target="_blank" className="previous-page">Confluence</a> (pas important mais très utile) pour trouver differentes documentations pour aider sur différents projets.</li>
-                                </ul>
-
+                            </p>
+                            <ul>
+                                <li><a href="https://products.office.com/fr-fr/microsoft-teams/group-chat-software" target="_blank" rel="noopener noreferrer" className="previous-page">Teams</a> / <a href="https://www.skype.com/fr/" target="_blank" rel="noopener noreferrer"className="previous-page">Skype</a> pour communiquer entre chaque personne de l'équipe mais aussi avec d'autres personnes de d'autres services.</li>
+                                <li><a href="https://outlook.live.com/owa/" target="_blank" rel="noopener noreferrer" className="previous-page">Outlook</a> pour les mails</li>
+                                <li><a href="https://www.jetbrains.com/idea/" target="_blank" rel="noopener noreferrer" className="previous-page">IntelliJ</a> (dans mon cas) qui est un IDE pour pouvoir programmer en Java.</li>
+                                <li><a href="https://visualstudio.microsoft.com/fr/tfs/" target="_blank" rel="noopener noreferrer" className="previous-page">TFS</a> qui fait office de server git au sein de Cdiscount.</li>
+                                <li><a href="https://www.atlassian.com/fr/software/confluence" target="_blank" rel="noopener noreferrer" className="previous-page">Confluence</a> (pas important mais très utile) pour trouver differentes documentations pour aider sur différents projets.</li>
+                            </ul>
+                            <p>
                                 Parfait ! Je suis prêt pour commencer ma première mission. &#128526;
                             </p>
                         </div>
 
-                        <div class="blog-part">
+                        <div className="blog-part">
                             <h3>II. Présentation de ma première mission</h3>
 
                             <p>
@@ -72,13 +75,13 @@ class AccueilEntreprise extends Component{
                             </p>
                         </div>
 
-                        <div class="blog-part">
+                        <div className="blog-part">
                             <h3>III. Présentation du service / de l'équipe</h3>
 
                             <span id="color-detail"><i>[A compléter...]</i></span>
                         </div>
 
-                        <div class="blog-part">
+                        <div className="blog-part">
                             <h3>IV. Intégration dans l'équipe</h3>
                             <br />
                             <ul>
@@ -115,7 +118,7 @@ class AccueilEntreprise extends Component{
                             </ul>
                         </div>
 
-                        <div class="blog-conclusion">
+                        <div className="blog-conclusion">
                             <h3><i>Bonus : Unboxing de la boîte de bienvenue</i></h3>
 
                             Si vous lisez ici, c'est que vous êtes curieux et avez grandement envie de savoir ce que contient cette fameuse boîte de bienvenue... &#128527;
