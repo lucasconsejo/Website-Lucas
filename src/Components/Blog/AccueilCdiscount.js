@@ -128,20 +128,6 @@ class AccueilCdiscount extends Component{
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link to="/blog/stage/cdiscount/article/difficultes-rencontrees-et-les-solutions-apportees" className="lien">
-                                        <div id="bloc-stage-list">
-                                            <div id="blog-stage-img-list">
-                                                <img src={imgDifficulte} alt="img connaissance" />
-                                            </div>
-                                            <div id="blog-stage-txt-list">
-                                                <h5>Difficultés rencontrées et les solutions apportées</h5>
-                                                <p className="lien-p">Publié : <span className="date">12 juillet 2019</span></p>
-                                                <p className="lien-p lien-p-last">Dernière modification : <span className="date">12 juillet 2019</span></p>
-                                            </div>
-                                        </div>
-                                    </Link>
-                                </li>
-                                <li>
                                     <Link to="/blog/stage/cdiscount/article/competences-acquises" className="lien">
                                         <div id="bloc-stage-list">
                                             <div id="blog-stage-img-list">
@@ -149,6 +135,20 @@ class AccueilCdiscount extends Component{
                                             </div>
                                             <div id="blog-stage-txt-list">
                                                 <h5>Compétences acquises</h5>
+                                                <p className="lien-p">Publié : <span className="date">12 juillet 2019</span></p>
+                                                <p className="lien-p lien-p-last">Dernière modification : <span className="date">12 juillet 2019</span></p>
+                                            </div>
+                                        </div>
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link to="/blog/stage/cdiscount/article/difficultes-rencontrees-et-les-solutions-apportees" className="lien">
+                                        <div id="bloc-stage-list">
+                                            <div id="blog-stage-img-list">
+                                                <img src={imgDifficulte} alt="img connaissance" />
+                                            </div>
+                                            <div id="blog-stage-txt-list">
+                                                <h5>Difficultés rencontrées et les solutions apportées</h5>
                                                 <p className="lien-p">Publié : <span className="date">12 juillet 2019</span></p>
                                                 <p className="lien-p lien-p-last">Dernière modification : <span className="date">12 juillet 2019</span></p>
                                             </div>
