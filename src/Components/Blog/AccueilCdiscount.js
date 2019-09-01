@@ -121,8 +121,8 @@ class AccueilCdiscount extends Component{
                                             </div>
                                             <div id="blog-stage-txt-list">
                                                 <h5>Connaissances mobilisées</h5>
-                                                <p className="lien-p">Publié : <span className="date">12 juillet 2019</span></p>
-                                                <p className="lien-p lien-p-last">Dernière modification : <span className="date">12 juillet 2019</span></p>
+                                                <p className="lien-p">Publié : <span className="date">20 août 2019</span></p>
+                                                <p className="lien-p lien-p-last">Dernière modification : <span className="date">22 août 2019</span></p>
                                             </div>
                                         </div>
                                     </Link>
