@@ -62,7 +62,9 @@ class TroisiemeMission extends Component{
                                 <li>
                                     <h5>Documentation et Schéma :</h5>
                                     <p>Je dois préparer la documentation de ces microservices pour expliquer ce qu'ils font, décrire la stratégie de test (comment on va tester que tout fonctionne), ainsi que faire un schéma.</p>
-                                    <a href={SchemaImg} target="_blank" rel="noopener noreferrer"><img className="blog-img-size" src={SchemaImg} /></a>
+                                    <div>
+                                      <a href={SchemaImg} target="_blank" rel="noopener noreferrer"><img className="blog-img-size" src={SchemaImg} /></a>
+                                    </div>
                                 </li>
                                 <br/>
                                 <li>
@@ -98,9 +100,11 @@ class TroisiemeMission extends Component{
                                 <br/>
                                 <br/>
                                 Voici ce que contient kakfa lorsque l'équipe Sword y enverra un <span id="color-detail">longtail</span> :
-
+                            </p>
+                            <div>
                                 <a href={LongtailImg} target="_blank" rel="noopener noreferrer"><img src={LongtailImg} /></a>
-
+                            </div>
+                            <p>
                                 Il est donc au format <span id="color-detail">JSON</span>.
                                 <br/>
                                 Maintenant, dans mon microservice, il faut que je mappe (convertir) ce JSON en Object. Pour faire cela, je dois créer une classe Java, qui contient des variables qui portent les mêmes types et même noms que les champs du JSON.
@@ -142,9 +146,11 @@ class TroisiemeMission extends Component{
                                <br/>
                                <br/>
                                Voici ce que contient kakfa lorsque l'équipe Sword y enverra un <span id="color-detail">placement</span> :
-
+                            </p>
+                            <div>
                                <a href={PlacementImg} target="_blank" rel="noopener noreferrer"><img src={PlacementImg}/></a>
-
+                            </div>
+                            <p>
                                Et voici ce qu'enverra mon microservice à <span id="color-detail">Solr</span> :
                                <br/>
                                <br/>
