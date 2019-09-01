@@ -17,7 +17,7 @@ class AccueilBlog extends Component{
                 <meta name="theme-color" content="#293545"></meta>
                <Navbar /><br /><br />
                 <div id="container-blog">
-                    <div id="img-fond-blog-accueil">
+                    <div id="img-fond-blog-accueil-2">
                         <h3 className="text-light text-center">Bienvenue sur le blog de Lucas Consejo</h3>
                         <p className="text-light text-center">Vous y trouverez les différents rapports de stage</p>
                     </div>

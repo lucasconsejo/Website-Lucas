@@ -15,7 +15,7 @@ import ConnaissanceMobilisées from "../Components/Blog/Articles/ConnaissanceMob
 import DifficultésRencontrees from "../Components/Blog/Articles/DifficultésRencontrees"
 import CompetencesAcquises from "../Components/Blog/Articles/CompetencesAcquises"
 import BilanStage from "../Components/Blog/Articles/BilanStage"
-//import APropos from "../Components/Blog/APropos"
+import APropos from "../Components/Blog/APropos"
 import Contact from '../Components/Contact/Contact.js'
 
 class App extends Component {
@@ -47,7 +47,7 @@ class App extends Component {
             <Route path="/blog/stage/cdiscount/article/connaissances-mobilisees" component={ConnaissanceMobilisées} />
             <Route path="/blog/stage/cdiscount/article/le-bilan-de-ce-stage" component={BilanStage} />
             <Route path="/blog/stage/cdiscount" component={AccueilCdiscount} />
-            <Route path="/blog/a-propos" component={AccueilBlog} />
+            <Route path="/blog/a-propos" component={APropos} />
             <Redirect exact from="/blog/*" to="/blog" />
             <Route exact path="/" component={Accueil} />
             <Route path="/competences" component={Competence} />

@@ -2,9 +2,8 @@ import React, {Component} from 'react';
 import '../../css/Blog.css'
 import { Link } from 'react-router-dom'
 import Navbar from '../NavbarBlog/NavbarBlog'
-import logoLn from '../../img/Footer/logo-ln.png'
-import logoGit from '../../img/Footer/logo-git.png'
-import imgCdiscount from "../../img/Blog/cdiscount-logo.jpg"
+import ProfilImg from "../../img/profil/photo-lucas.png"
+import Footer from '../Footer/FooterBlog'
 
 class APropos extends Component{
 
@@ -16,53 +15,45 @@ class APropos extends Component{
         return(
             <div className="accueil-blog-bloc">
                 <meta name="theme-color" content="#293545"></meta>
-                <Navbar />
+                <Navbar /><br /><br />
                 <div id="container-blog">
-                    <div id="img-fond-blog">
-                    
+                    <div id="img-fond-blog-accueil">
+                        <div id="propos-profil-img">
+                            <img src={ProfilImg} alt="photo profile"/>
+                        </div>
+                        <div id="propos-title">
+                            <h3 className="text-light text-center">Lucas Consejo</h3>
+                            <p className="text-light text-center">Étudiant à Ingésup Ynov Bordeaux</p>
+                        </div>
                     </div>
-                
-                    <div className="container">
-                        <div id="blog-intro">
-                            <h2>Blog de stage</h2>
 
+                    <div className="container">
+                        <div className="blog-part">
+                            <h3>A propos</h3>
+                            <p>Je suis Lucas Consejo, étudiant en école d'ingénieur informatique, à Ingésup sur le Campus Ynov à Bordeaux.
+                                <br />
+                                Je prépare un Master (BAC+5) pour passer le diplôme d'<span id="color-detail">Expert informatique et systèmes d'informations - Titre RNCP de niveau I</span>.
+                                <br />
+                                Je rentre cette année (2019-2020) en 3ème année (BAC+3) avec la spécialisation <span id="color-detail">Technologie Web</span>.
+                                <br />
+                                <br />
+                                Je suis passionné par l'informatique. Je suis curieux, motivé et je cherche constamment à approfondir mes compétences.
+                            </p>
+                            <h4>Mes stages</h4>
                             <ul>
                                 <li>
-                                    <Link to="/blog/stages/cdiscount" className="lien">
-                                        <div id="bloc-stage-list">
-                                            <div id="blog-stage-img-list">
-                                                <img src={imgCdiscount} alt="img cdiscount" />
-                                            </div>
-                                            <div id="blog-stage-txt-list">
-                                                <h5>Stage développeur à Cdiscount</h5>
-                                                <p className="lien-p">Date : Du 1 Juillet au 13 Septembre 2019</p>
-                                                <p className="lien-p">Durée : 2 mois</p>
-                                            </div>
-                                        </div>
-                                    </Link>
+                                    Durant l'été 2019, j'ai été <span id="color-detail">stagiaire développeur</span> au siège de <a href="https://www.cdiscount.com/" target="_blank"  rel="noopener noreferrer" id="lien-cdiscount">Cdiscount</a> à Bordeaux, pour une durée de <span id="color-detail">2 mois</span>.
+                                    <br/>
+                                    Les différents articles de ce <Link to="/blog/stage/cdiscount" className="previous-page">blog</Link>, retracent les principales missions que j'ai du faire, les compétences acquises/mobilisées ainsi que les difficultés que j'ai rencontré.
                                 </li>
                             </ul>
-                        </div>
-
-                        <div id="copyright-accueil" className="row">
-                            <div className="col-xl-1 col-lg-2 col-md-2 col-sm-2 col-3">
-                                <div className="row">
-                                    <div id="logo-blog-ln" className="col-md-4 col-2">
-                                        <a href="https://www.linkedin.com/in/lucas-consejo/" target="_blank" rel="noopener noreferrer"><img src={logoLn} alt="lien linkedin"/></a>
-                                    </div>
-
-                                    <div id="logo-blog-git" className="col-md-4 col-2">
-                                        <a href="https://github.com/lucasconsejo" target="_blank" rel="noopener noreferrer"><img src={logoGit} alt="lien git"/></a>
-                                    </div>
-                                </div>
-                            </div> 
-                            
-                            <div id="accueil-copyright" className="offset-md-3 col-md-7 offset-sm-1 col-sm-9 offset-0 offset-xl-3 col-8 col-xl-5 offset-lg-3 col-lg-6">
-                                <p className="">Copyright © 2019 Lucas Consejo - Tout droits réservés</p>
-                            </div>
+                            <p>
+                                
+                            </p>                            
                         </div>
                     </div>
                 </div>
+                    
             </div>
         )
     }

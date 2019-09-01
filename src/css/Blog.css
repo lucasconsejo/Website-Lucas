@@ -119,10 +119,27 @@ body{
     color: #4d4d4d;
   }
 
-  #img-fond-blog-accueil{
+  #img-fond-blog-accueil-2{
     background-color: #293545;
     padding-top: 50px;
     padding-bottom: 50px;
+  }
+  #img-fond-blog-accueil{
+    background-color: #293545;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+  }
+  #propos-profil-img img{
+    width: 80%;
+  }
+  #propos-title{
+    block-size: 0%;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 0px;
   }
   #blog-intro{
     margin-top: 30px;
