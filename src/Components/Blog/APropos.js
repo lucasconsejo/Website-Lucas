@@ -1,9 +1,11 @@
+/* eslint-disable jsx-a11y/img-redundant-alt */
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, {Component} from 'react';
 import '../../css/Blog.css'
 import { Link } from 'react-router-dom'
 import Navbar from '../NavbarBlog/NavbarBlog'
 import ProfilImg from "../../img/profil/photo-lucas.png"
-import Footer from '../Footer/FooterBlog'
+//import Footer from '../Footer/FooterBlog'
 
 class APropos extends Component{
 
@@ -47,9 +49,16 @@ class APropos extends Component{
                                     Les différents articles de ce <Link to="/blog/stage/cdiscount" className="previous-page">blog</Link>, retracent les principales missions que j'ai du faire, les compétences acquises/mobilisées ainsi que les difficultés que j'ai rencontré.
                                 </li>
                             </ul>
-                            <p>
-                                
-                            </p>                            
+                            <h4>Me contacter</h4>
+                            <p>Email : <a href="mailto:lucas.consejo@ynov.com" rel="noopener noreferrer" id="lien-cdiscount">lucas.consejo@ynov.com</a><br/>
+                               Tél : <a href="tel:0605231854" rel="noopener noreferrer" id="lien-cdiscount">06 05 23 18 54</a><br/>
+                               Formulaire de contact : <a href="http://lucasconsejo.fr/contact" target="_blank" rel="noopener noreferrer" id="lien-cdiscount">http://lucasconsejo.fr/contact</a>
+                            </p>  
+                            <div className="row">
+                                <div className="col-lg-12 mb-5 text-center">
+                                    <a href="https://lucasconsejo.fr" alt="cv" className="btn btn-cv" download>Consulter mon CV</a>
+                                </div>
+                            </div>                 
                         </div>
                     </div>
                 </div>

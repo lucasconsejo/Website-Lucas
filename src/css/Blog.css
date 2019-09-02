@@ -133,12 +133,20 @@ body{
     justify-items: center;
   }
   #propos-profil-img img{
-    width: 80%;
+    width: 70%;
   }
   #propos-title{
     margin-top: auto!important;
     margin-bottom: auto!important;
     margin-left: 0px;
+  }
+  .btn-cv{
+    background-color: #c73a0f;
+    color: #fff;
+  }
+  .btn-cv:hover{
+    background-color: #923f25;
+    color: #fff;
   }
   #blog-intro{
     margin-top: 30px;
