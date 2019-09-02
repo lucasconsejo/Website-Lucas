@@ -137,8 +137,8 @@ body{
   }
   #propos-title{
     block-size: 0%;
-    margin-top: auto;
-    margin-bottom: auto;
+    margin-top: auto!important;
+    margin-bottom: auto!important;
     margin-left: 0px;
   }
   #blog-intro{
